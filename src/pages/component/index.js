@@ -114,7 +114,7 @@ export default class Index extends Component {
         <View className='index-hd'>
           <Image className='index-logo' src={logo} />
           <View className='index-desc'>
-            以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见小程序开发文档。
+            以下将展示Taro官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式。
           </View>
         </View>
         <View className='index-bd'>
