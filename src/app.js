@@ -30,8 +30,6 @@ class App extends Component {
       'pages/component/pages/navigator/navigator',
       'pages/component/pages/redirectPage/redirectPage',
       'pages/component/pages/navigatePage/navigatePage',
-      // 'pages/index/index',
-      // 'pages/hello/hello',
       'pages/about/about'
     ],
     window: {

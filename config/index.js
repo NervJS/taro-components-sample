@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'taro-todo',
+  projectName: 'taro-components-sample',
   designWidth: 750,
   sourceRoot: 'src',
   outputRoot: 'dist',

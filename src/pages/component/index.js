@@ -88,8 +88,8 @@ export default class Index extends Component {
     // })
   }
   kindToggle = e => {
-    var id = e.currentTarget.id,
-      list = this.state.list
+    const id = e.currentTarget.id
+    const list = this.state.list
     for (var i = 0, len = list.length; i < len; ++i) {
       if (list[i].id == id) {
         list[i].open = !list[i].open
