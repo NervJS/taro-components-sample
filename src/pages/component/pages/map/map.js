@@ -17,7 +17,7 @@ export default class PageView extends Component {
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>
-              <Text>暂未支持，敬请期待</Text>
+              { Taro.getEnv() == ENV_TYPE.WEAPP ? <Text>暂未支持，敬请期待</Text> : <Text>可直接使用微信小程序的Map</Text>}
             </View>
           </View>
         </View>
