@@ -17,7 +17,7 @@ export default class About extends Component {
   render () {
     return (
       <View>
-        <Header title='Canvas'></Header>
+        <Header title='Camera'></Header>
         <Camera></Camera>
       </View>
     )
