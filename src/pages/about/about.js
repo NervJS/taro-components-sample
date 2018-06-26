@@ -33,7 +33,7 @@ export default class About extends Component {
         <View>
           <Text>关于</Text>
           <View className='info'>
-            <Text>Nerv-WEUI 基础组件是基于 WEUI 和 微信小程序 开发的组件库,目的是为了提供一套多端可使用的基础组件库,其样式与 WEUI 对齐,组件的调用方式跟 微信小程序 统一</Text>
+            <Text>Taro 基础组件库，一套基于「微信小程序」和「WeUI」规范实现的基础组件，依赖于 NervJS 或 Taro框架；其组件样式与「WeUI」规范一致，调用方式与「微信小程序」接口一致，为快速开发多端项目而准备</Text>
           </View>
         </View>
       </View>

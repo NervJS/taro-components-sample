@@ -30,7 +30,8 @@ class App extends Component {
       'pages/component/pages/navigator/navigator',
       'pages/component/pages/redirectPage/redirectPage',
       'pages/component/pages/navigatePage/navigatePage',
-      'pages/about/about'
+      'pages/about/about',
+      'pages/component/pages/camera/camera'
     ],
     window: {
       backgroundTextStyle: 'light',
