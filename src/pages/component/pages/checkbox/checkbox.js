@@ -6,12 +6,12 @@ import { View, Text, Checkbox, Label, CheckboxGroup } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageCheckbox extends Component {
-  constructor () {
+  constructor() {
     super(...arguments)
   }
 
   state = {
-    selectValues : ['中国'],
+    selectValues: ['中国'],
     list: [
       {
         value: '美国',
@@ -45,13 +45,19 @@ export default class PageCheckbox extends Component {
       }
     ]
   }
+
   checkboxChange = e => {
+    const list = this.state.list.map(item => {
+      item.checked = e.detail.value.indexOf(item.value) >= 0
+      return item
+    })
     this.setState({
+      list,
       selectValues: e.detail.value
     })
   }
 
-  render () {
+  render() {
     return (
       <View className='container'>
         <Header title='Checkbox'></Header>

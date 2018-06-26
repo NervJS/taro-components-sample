@@ -55,3 +55,9 @@
 * placeholder,autoFocus不支持
 * autoHeight文档上面没写支不支持 
 * input 指定了value时候 textarea这个元素依然更新内容
+
+#### 全局样式问题
+* placeholder颜色
+* 全局样式的统一
+* h5样式无法使用 element
+

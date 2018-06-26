@@ -9,14 +9,12 @@ export default class PageTextarea extends Component {
   }
 
   state = {
-    value: '暂未付',
-    isDisabled : true
+    value: '初始值',
   }
 
   handleClick = () => {
     this.setState({
-      value: '你看看！！！！@#',
-      isDisabled: false
+      value: '点击了按钮',
     })
   }
 
@@ -37,7 +35,7 @@ export default class PageTextarea extends Component {
     return (
       <View className='container'>
         <Header title='Textarea'></Header>
-        <View onClick={this.handleClick}>handleClick</View>
+        <View onClick={this.handleClick}>点击设置值到第一个Textarea</View>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>

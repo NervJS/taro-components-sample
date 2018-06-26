@@ -26,7 +26,12 @@ export default class PagePicker extends Component {
   }
 
   handleMulitChange = e => {
-    console.log(e.detail)
+    const values = e.detail.value.map((item,index) => {
+      return this.state.multiSelector[index][item]
+    })
+    this.setState({
+      mulitSelectorValues : values
+    })
   }
 
   handleColumnchange = e => {

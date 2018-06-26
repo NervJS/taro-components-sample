@@ -48,7 +48,12 @@ export default class PageRadio extends Component {
   }
 
   radioChange = e => {
+    const list = this.state.list.map(item => {
+      item.checked = item.value == e.detail.value
+      return item
+    })
     this.setState({
+      list,
       selectValue: e.detail.value
     })
   }
