@@ -6,10 +6,6 @@ import { Camera, View } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends Component {
-  config = {
-    navigationBarTitleText: '相机'
-  }
-
   constructor () {
     super(...arguments)
   }
