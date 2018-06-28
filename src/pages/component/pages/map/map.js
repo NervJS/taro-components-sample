@@ -1,6 +1,6 @@
 import './map.scss'
 
-import { Component } from '@tarojs/taro'
+import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
@@ -17,7 +17,7 @@ export default class PageView extends Component {
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>
-              { Taro.getEnv() == ENV_TYPE.WEAPP ? <Text>暂未支持，敬请期待</Text> : <Text>可直接使用微信小程序的Map</Text>}
+              { Taro.getEnv() == Taro.ENV_TYPE.WEAPP ? <Text>暂未支持，敬请期待</Text> : <Text>可直接使用微信小程序的Map</Text>}
             </View>
           </View>
         </View>
