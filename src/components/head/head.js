@@ -1,6 +1,6 @@
 import { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-export default class Head extends Component {
+export default class Header extends Component {
   render() {
     return (
       <View className="page-head">
