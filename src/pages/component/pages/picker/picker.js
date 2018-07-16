@@ -46,7 +46,7 @@ export default class PagePicker extends Component {
 
   handleDateChange = e => {
     this.setState({
-      dateSel: e.detail.value
+      dateSel: e.detail.value.join('-')
     })
   }
 

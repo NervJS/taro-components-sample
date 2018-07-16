@@ -71,6 +71,7 @@ export default class PageView extends Component {
   }
 
   setDuration = e => {
+    console.log(this)
     this.setState({
       duration: e.detail.value
     })

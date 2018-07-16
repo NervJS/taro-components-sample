@@ -6,12 +6,12 @@ import { View, Text, Switch } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageSwitch extends Component {
-  constructor () {
+  constructor() {
     super(...arguments)
   }
 
   state = {
-    isChecked: false
+    isChecked: true
   }
 
   setIsChecked = (e) => {
@@ -21,7 +21,7 @@ export default class PageSwitch extends Component {
     })
   }
 
-  render () {
+  render() {
     return (
       <View className='container'>
         <Header title='Switch'></Header>
@@ -55,7 +55,7 @@ export default class PageSwitch extends Component {
             </View>
             <View className='switch-list'>
               <View className='switch-list__item'>
-                <View className='switch-list__text'>开启中</View>
+                <View className='switch-list__text'>{this.state.isChecked ? '开启' : '关闭'}</View>
                 <Switch onChange={this.setIsChecked} checked={this.state.isChecked}></Switch>
               </View>
             </View>
