@@ -19,6 +19,11 @@ import {
 import Header from '../../../../components/head/head'
 
 export default class PageForm extends Component {
+
+  config = {
+    navigationBarTitleText: 'Form组件'
+  }
+
   constructor () {
     super(...arguments)
   }

@@ -6,6 +6,11 @@ import { View, Button } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageButton extends Component {
+
+  config = {
+    navigationBarTitleText: 'Button组件'
+  }
+
   constructor () {
     super(...arguments)
   }

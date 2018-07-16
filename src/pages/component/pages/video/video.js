@@ -6,6 +6,11 @@ import { View, Video } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends Component {
+  
+  config = {
+    navigationBarTitleText: 'Video组件'
+  }
+
   constructor () {
     super(...arguments)
   }

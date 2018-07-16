@@ -6,6 +6,11 @@ import { View, Icon } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends Component {
+
+  config = {
+    navigationBarTitleText: 'Icon组件'
+  }
+
   constructor () {
     super(...arguments)
   }

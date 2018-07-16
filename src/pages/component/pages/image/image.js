@@ -8,6 +8,11 @@ import nervLogo from './nerv_logo.png'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends Component {
+
+  config = {
+    navigationBarTitleText: 'Image组件'
+  }
+
   constructor () {
     super(...arguments)
   }

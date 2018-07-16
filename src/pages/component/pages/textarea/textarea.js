@@ -4,6 +4,11 @@ import { View, Text, Textarea } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageTextarea extends Component {
+
+  config = {
+    navigationBarTitleText: 'Textare组件'
+  }
+
   constructor() {
     super(...arguments)
   }

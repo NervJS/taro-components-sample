@@ -6,6 +6,11 @@ import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageRadio extends Component {
+
+  config = {
+    navigationBarTitleText: 'Radio组件'
+  }
+
   constructor () {
     super(...arguments)
   }

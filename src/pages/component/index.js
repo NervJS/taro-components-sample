@@ -23,7 +23,7 @@ const PNGS = {
 
 export default class Index extends Component {
   config = {
-    navigationBarTitleText: '小程序官方组件-Taro版展示'
+    navigationBarTitleText: 'Taro基础组件展示'
   }
 
   constructor () {

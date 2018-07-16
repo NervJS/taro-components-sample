@@ -4,6 +4,11 @@ import { View, Button, Text, Slider } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageSlider extends Component {
+
+  config = {
+    navigationBarTitleText: 'Slider组件'
+  }
+
   constructor () {
     super(...arguments)
   }

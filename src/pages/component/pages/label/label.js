@@ -13,6 +13,11 @@ import {
 import Header from '../../../../components/head/head'
 
 export default class PageLabel extends Component {
+
+  config = {
+    navigationBarTitleText: 'Label组件'
+  }
+
   constructor () {
     super(...arguments)
   }

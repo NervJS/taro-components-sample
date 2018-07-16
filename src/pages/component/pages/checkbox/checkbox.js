@@ -6,6 +6,11 @@ import { View, Text, Checkbox, Label, CheckboxGroup } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageCheckbox extends Component {
+
+  config = {
+    navigationBarTitleText: 'Checkbox组件'
+  }
+
   constructor() {
     super(...arguments)
   }

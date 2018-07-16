@@ -4,6 +4,11 @@ import { View, Text, Input } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageInput extends Component {
+
+  config = {
+    navigationBarTitleText: 'Input组件'
+  }
+
   constructor () {
     super(...arguments)
   }
