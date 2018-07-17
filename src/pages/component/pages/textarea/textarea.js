@@ -1,5 +1,5 @@
 import { Component } from '@tarojs/taro'
-import { View, Text, Textarea } from '@tarojs/components'
+import { View, Text, Textarea, Button } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
@@ -40,22 +40,22 @@ export default class PageTextarea extends Component {
     return (
       <View className='container'>
         <Header title='Textarea'></Header>
-        <View onClick={this.handleClick}>点击设置值到第一个Textarea</View>
+        <Button type='primary' onClick={this.handleClick}>点击设置值到第一个Textarea</Button>
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>
               <Text>输入区域高度自适应，不会出现滚动条</Text>
             </View>
-            <View>
-              <Textarea maxlength='20' onFocus={this.focus} onBlur={this.blur} value={this.state.value} placeholder='暂未付' autoHeight onInput={this.input}></Textarea>
+            <View className='textarea-container'>
+              <Textarea onFocus={this.focus} onBlur={this.blur} value={this.state.value} placeholder='这是一个Textarea' autoHeight onInput={this.input}></Textarea>
             </View>
           </View>
           <View className='page-section'>
             <View className='page-section-title'>
               <Text>这是一个可以自动聚焦的textarea</Text>
             </View>
-            <View>
-              <Textarea autoFocus></Textarea>
+            <View className='textarea-container'>
+              <Textarea autoFocus placeholder='这是一个Textarea'></Textarea>
             </View>
           </View>
         </View>

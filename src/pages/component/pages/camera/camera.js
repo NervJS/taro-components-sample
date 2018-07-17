@@ -27,7 +27,7 @@ export default class PageView extends Component {
     return (
       <View>
         <Header title='Camera'></Header>
-        <Camera onStop={this.handleStop} onError={this.handleError}></Camera>
+        <Camera className='cammer-content' onStop={this.handleStop} onError={this.handleError}></Camera>
       </View>
     )
   }

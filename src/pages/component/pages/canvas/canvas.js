@@ -22,7 +22,7 @@ export default class PageView extends Component {
         <View className='page-body'>
           <View className='page-section'>
             <View className='page-section-title'>
-            { Taro.getEnv() == Taro.ENV_TYPE.WEAPP ? <Text>暂未支持，敬请期待</Text> : <Text>可直接使用微信小程序的Canvas</Text>}
+            { Taro.getEnv() == Taro.ENV_TYPE.WEAPP ?  <Text>可直接使用微信小程序的Canvas组件</Text> : <Text>暂未支持，敬请期待</Text> }
             </View>
           </View>
         </View>

@@ -96,7 +96,7 @@ export default class PageLabel extends Component {
                 <Checkbox value='选项二'>选项二</Checkbox>
               </Label>
             </View>
-            <View style='margin-top:15px;margin-left:30px;font-size:28px;color:#586C94;'>
+            <View style='margin-top:auto;margin-left:auto;font-size:16px;color:#586C94;margin-top:15px;'>
               <Label onClick={this.handleChange}>
                 点击该label下的文字默认选中第一个checkbox
               </Label>
