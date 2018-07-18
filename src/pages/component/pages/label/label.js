@@ -90,9 +90,6 @@ export default class PageLabel extends Component {
                   <Radio value='ShenZhen'>深圳</Radio>
                 </Label>
               </RadioGroup>
-              <View className='example-body__button'>
-                <Label for='5'>点击此 Label 广州将被选中</Label>
-              </View>
             </View>
           </View>
         </View>
