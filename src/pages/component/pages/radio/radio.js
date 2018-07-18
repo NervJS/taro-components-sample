@@ -6,7 +6,12 @@ import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageRadio extends Component {
-  constructor () {
+
+  config = {
+    navigationBarTitleText: 'Radio组件'
+  }
+
+  constructor() {
     super(...arguments)
   }
 
@@ -58,40 +63,39 @@ export default class PageRadio extends Component {
     })
   }
 
-  render () {
+  render() {
     return (
-      <View className='container'>
-        <Header title='Radio'></Header>
-        <View className='page-body'>
-          <View className='page-section'>
-            <View className='page-section-title'>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Radio'></Header>
+        </View>
+        <View className='components-page__body'>
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>默认样式</Text>
             </View>
-            <View className='page-section-spacing-reset'>
+            <View className='example-body'>
               <Radio value='选中' checked>
                 选中
               </Radio>
               <Radio style='margin-left: 30px' value='未选中'>
                 未选中
               </Radio>
-              <Radio style='margin-left: 30px' checked={this.state.isChecked} onChange={this.handleChange}>
-                数据绑定
-              </Radio>
             </View>
           </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>推荐展示样式</Text>
             </View>
-            <View className='select-box'>
-              选中的值是: {this.state.selectValue}
-            </View>
-            <View>
-              <View className='radio-list'>
+            <View className='example-body'>
+              <View className='example-body__select-box'>
+                选中的值是: {this.state.selectValue}
+              </View>
+              <View className='example-body__radios'>
                 <RadioGroup onChange={this.radioChange}>
                   {this.state.list.map((item, i) => {
                     return (
-                      <Label className='radio-list__label' for={i} key={i}>
+                      <Label className='example-body__radios-item' for={i} key={i}>
                         <Radio
                           name='radio'
                           value={item.value}
@@ -106,7 +110,7 @@ export default class PageRadio extends Component {
             </View>
           </View>
         </View>
-      </View>
+      </View >
     )
   }
 }

@@ -23,7 +23,7 @@ const PNGS = {
 
 export default class Index extends Component {
   config = {
-    navigationBarTitleText: '小程序官方组件-Taro版展示'
+    navigationBarTitleText: 'Taro基础组件展示'
   }
 
   constructor () {
@@ -83,9 +83,6 @@ export default class Index extends Component {
         }
       ]
     }
-    // this.state.list.forEach(item => {
-    //   item.icon = require(`../../asset/component/${item.id}.png`)
-    // })
   }
   kindToggle = e => {
     const id = e.currentTarget.id

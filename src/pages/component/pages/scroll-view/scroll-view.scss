@@ -1,11 +1,21 @@
-.scrollview {
-  text-align: center;
-  line-height: 300px;
-  color: #fff;
-  width:600px;
-  margin:30px auto 0;
+.example {
+  &-body {
+    height: 300px;
+    &__scroll-view {
+      height: 100%;
+      white-space: nowrap;
+      &-item {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+      }
+    }
+    &--vertical {
+      .example-body__scroll-view {
+        &-item {
+          display: block;
+        }
+      }
+    }
+  }
 }
-.test-button{
-  width: 600px;
-}
-

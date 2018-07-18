@@ -6,6 +6,11 @@ import { View, Text, Picker } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PagePicker extends Component {
+
+  config = {
+    navigationBarTitleText: 'Picker组件'
+  }
+
   constructor () {
     super(...arguments)
   }
@@ -46,7 +51,7 @@ export default class PagePicker extends Component {
 
   handleDateChange = e => {
     this.setState({
-      dateSel: e.detail.value
+      dateSel: e.detail.value.join('-')
     })
   }
 
