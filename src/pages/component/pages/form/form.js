@@ -1,6 +1,5 @@
 import { Component } from '@tarojs/taro'
 
-// RadioGroup ,Form ,CheckboxGroup
 import {
   View,
   Text,
@@ -18,37 +17,39 @@ import {
 
 import Header from '../../../../components/head/head'
 
+import './form.scss'
+
 export default class PageForm extends Component {
 
   config = {
     navigationBarTitleText: 'Form组件'
   }
 
-  constructor () {
+  constructor() {
     super(...arguments)
   }
 
   state = {
     radioItem: [
       {
-        key: '1',
+        key: 'radio-1',
         value: '选项一',
         checked: false
       },
       {
-        key: '2',
+        key: 'radio-2',
         value: '选项二',
         checked: false
       }
     ],
     checkItem: [
       {
-        key: '1',
+        key: 'checkbox—1',
         value: '选项一',
         checked: false
       },
       {
-        key: '2',
+        key: 'checkbox—2',
         value: '选项二',
         checked: false
       }
@@ -84,30 +85,32 @@ export default class PageForm extends Component {
     console.log(e)
   }
 
-  render () {
+  render() {
     return (
-      <View className='container'>
-        <Header title='form'></Header>
-        <View className='page-body'>
-          <Form onSubmit={this.formSubmit} onReset={this.formReset}>
-            <View className='page-section'>
-              <View className='page-section-title'>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Form'></Header>
+        </View>
+        <Form onSubmit={this.formSubmit} onReset={this.formReset}>
+          <View className='components-page__body'>
+            <View className='components-page__body-example example'>
+              <View className='example-header'>
                 <Text>switch</Text>
               </View>
-              <View className='page-section-spacing-reset'>
+              <View className='example-body'>
                 <Switch onChange={this.onHandleChange} name='switch' ></Switch>
               </View>
             </View>
-            <View className='page-section'>
-              <View className='page-section-title'>
+            <View className='components-page__body-example example'>
+              <View className='example-header'>
                 <Text>radio</Text>
               </View>
-              <View className='page-section-spacing-reset'>
-                <RadioGroup onChange={this.onRadioChange} name='radio'>
+              <View className='example-body'>
+                <RadioGroup className='example-body__radio-group' onChange={this.onRadioChange} name='radio'>
                   {this.state.radioItem.map(item => {
                     return (
-                      <Label for={item.key} key={item.key}>
-                        <Radio value={item.key} checked={item.checked}>
+                      <Label className='example-body__radio-group-item' for={item.key} key={item.key}>
+                        <Radio value={item.key} checked={item.checked} >
                           <Text>{item.value}</Text>
                         </Radio>
                       </Label>
@@ -116,15 +119,15 @@ export default class PageForm extends Component {
                 </RadioGroup>
               </View>
             </View>
-            <View className='page-section'>
-              <View className='page-section-title'>
+            <View className='components-page__body-example example'>
+              <View className='example-header'>
                 <Text>checkbox</Text>
               </View>
-              <View className='page-section-spacing-reset'>
-                <CheckboxGroup onChange={this.onCheckChange} name='check'>
+              <View className='example-body'>
+                <CheckboxGroup  className='example-body__checkbox-group' onChange={this.onCheckChange} name='checkbox'>
                   {this.state.checkItem.map(item => {
                     return (
-                      <Label for={item.key} key={item.key}>
+                      <Label  className='example-body__checkbox-group-item' for={item.key} key={item.key}>
                         <Checkbox value={item.key} checked={item.checked}>
                           <Text>{item.value}</Text>
                         </Checkbox>
@@ -134,11 +137,11 @@ export default class PageForm extends Component {
                 </CheckboxGroup>
               </View>
             </View>
-            <View className='page-section'>
-              <View className='page-section-title'>
+            <View className='components-page__body-example example'>
+              <View className='example-header'>
                 <Text>slider</Text>
               </View>
-              <View className='page-section-spacing-reset'>
+              <View className='example-body'>
                 <Slider
                   name='slider'
                   value={this.state.sliderValue}
@@ -147,13 +150,11 @@ export default class PageForm extends Component {
                   bingchanging={this.handleSliderChanging} ></Slider>
               </View>
             </View>
-            <View className='page-section'>
-              <View className='page-section-title'>
+            <View className='components-page__body-example example example-input'>
+              <View className='example-header'>
                 <Text>input</Text>
               </View>
-              <View
-                className='page-section-spacing-reset'
-                style='background:#fff;padding:15px 30px;'>
+              <View className='example-body'>
                 <Input
                   name='input'
                   type='text'
@@ -161,8 +162,8 @@ export default class PageForm extends Component {
                   onChange={this.onHandleChange} ></Input>
               </View>
             </View>
-            <View className='page-section'>
-              <View className='page-section-spacing-reset'>
+            <View className='components-page__body-example example'>
+              <View className='example-body'>
                 <Button formType='submit' type='primary'>
                   Submit
                 </Button>
@@ -171,8 +172,8 @@ export default class PageForm extends Component {
                 </Button>
               </View>
             </View>
-          </Form>
-        </View>
+          </View>
+        </Form>
       </View>
     )
   }

@@ -11,7 +11,7 @@ export default class PageButton extends Component {
     navigationBarTitleText: 'Button组件'
   }
 
-  constructor () {
+  constructor() {
     super(...arguments)
   }
 
@@ -58,13 +58,15 @@ export default class PageButton extends Component {
       }
     ]
   }
-  render () {
+  render() {
     return (
-      <View className='container'>
-        <Header title='Button'></Header>
-        <View className='page-body'>
-          <View className='page-section'>
-            <View className='page-section-spacing-reset'>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Button'></Header>
+        </View>
+        <View className='components-page__body'>
+          <View className='components-page__body-example example'>
+            <View className='example-body'>
               {this.state.btn.map(item => {
                 return (
                   <Button
@@ -76,26 +78,14 @@ export default class PageButton extends Component {
                   </Button>
                 )
               })}
-              <Button className='btn-max-w' plain type='primary'>
-                按钮
-              </Button>
-              <Button className='btn-max-w' plain type='primary' disabled>
-                不可点击的按钮
-              </Button>
-              <Button className='btn-max-w' plain>
-                按钮
-              </Button>
-              <Button className='btn-max-w' plain disabled>
-                按钮
-              </Button>
-              <View className='btn-center btn-max-w'>
-                <Button size='mini' type='primary'>
-                  按钮
-                </Button>
-                <Button size='mini'>按钮</Button>
-                <Button size='mini' type='warn'>
-                  按钮
-                </Button>
+              <Button plain type='primary'>按钮</Button>
+              <Button plain type='primary' disabled>不可点击的按钮</Button>
+              <Button plain>镂空按钮</Button>
+              <Button plain disabled>镂空按钮 Disabled</Button>
+              <View className='btn-center'>
+                <Button size='mini' type='primary'>小号按钮</Button>
+                <Button size='mini'>小号按钮</Button>
+                <Button size='mini' type='warn'>小号按钮</Button>
               </View>
             </View>
           </View>

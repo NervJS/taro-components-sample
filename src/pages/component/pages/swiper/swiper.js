@@ -18,7 +18,7 @@ export default class PageView extends Component {
     navigationBarTitleText: 'Swiper组件'
   }
 
-  constructor () {
+  constructor() {
     super(...arguments)
     this.state = {
       current: 1,
@@ -82,133 +82,112 @@ export default class PageView extends Component {
     })
   }
 
-  render () {
-    const { current, isAutoplay, duration,isCircular, interval, hasIndicatorDots, verticalIsCircular, verticalHasIndicatorDots, verticalIsAutoplay } = this.state
+  render() {
+    const { current, isAutoplay, duration, isCircular, interval, hasIndicatorDots, verticalIsCircular, verticalHasIndicatorDots, verticalIsAutoplay } = this.state
     return (
-      <View className='container'>
-        <Header title='Swiper'></Header>
-        <View className='page-body'>
-          <View className='page-section'>
-            <View className='page-section-title'>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Swiper'></Header>
+        </View>
+        <View className='components-page__body'>
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>Swiper 横向滑动</Text>
             </View>
-            <Swiper
-              slideMult='10'
-              className='test-h'
-              indicatorColor='#999'
-              indicatorActiveColor='#333'
-              current={current}
-              duration={duration}
-              interval={interval}
-              circular={isCircular}
-              autoplay={isAutoplay}
-              indicatorDots={hasIndicatorDots}
-              preMargin='20'>
-              <SwiperItem>
-                <View
-                  className='content'
-                  style='height:100%;background-color:rgb(26,173,25);'>
-                  A
+            <View className='example-body'>
+              <Swiper
+                slideMult='10'
+                indicatorColor='#999'
+                indicatorActiveColor='#333'
+                current={current}
+                duration={duration}
+                interval={interval}
+                circular={isCircular}
+                autoplay={isAutoplay}
+                indicatorDots={hasIndicatorDots}
+                preMargin='20'>
+                <SwiperItem>
+                  <View className='demo-text-1'></View>
+                </SwiperItem>
+                <SwiperItem>
+                  <View className='demo-text-2'></View>
+                </SwiperItem>
+                <SwiperItem>
+                  <View className='demo-text-3'></View>
+                </SwiperItem>
+              </Swiper>
+              <View className='switch-list'>
+                <View className='switch-list__item'>
+                  <View className='switch-list__text'>指示点</View>
+                  <Switch checked={hasIndicatorDots} onChange={this.setIndicatorDots} ></Switch>
                 </View>
-              </SwiperItem>
-              <SwiperItem>
-                <View
-                  className='content'
-                  style='height:100%;background-color:rgb(39,130,215);'>
-                  B
+                <View className='switch-list__item'>
+                  <View className='switch-list__text'>自动播放</View>
+                  <Switch checked={isAutoplay} onChange={this.setAutoPlay} ></Switch>
                 </View>
-              </SwiperItem>
-              <SwiperItem>
-                <View
-                  className='content'
-                  style='height:100%;background-color:rgb(241,241,241);color: #333;'>
-                  C
+                <View className='switch-list__item'>
+                  <View className='switch-list__text'>循环播放</View>
+                  <Switch checked={isCircular} onChange={this.setCircular} ></Switch>
                 </View>
-              </SwiperItem>
-            </Swiper>
-          </View>
-          <View className='page-section'>
-            <View className='switch-list'>
-              <View className='switch-list__item'>
-                <View className='switch-list__text'>指示点</View>
-                <Switch checked={hasIndicatorDots} onChange={this.setIndicatorDots} ></Switch>
               </View>
-              <View className='switch-list__item'>
-                <View className='switch-list__text'>自动播放</View>
-                <Switch checked={isAutoplay} onChange={this.setAutoPlay} ></Switch>
+              <View className='slider-list'>
+                <View className='slider-list__item'>
+                  <View className='slider-list__item-header'>
+                    <Text>幻灯片切换时长(ms)</Text>
+                  </View>
+                  <View className='slider-list__item-body'>
+                    <Slider
+                      showValue
+                      step={1}
+                      min={500}
+                      max={2000}
+                      value={duration}
+                      onChange={this.setDuration}></Slider>
+                  </View>
+                </View>
+                <View className='slider-list__item'>
+                  <View className='slider-list__item-header'>
+                    <Text>自动播放间隔时长(ms)</Text>
+                  </View>
+                  <View className='slider-list__item-body'>
+                    <Slider
+                      showValue
+                      step={1}
+                      min={2000}
+                      max={10000}
+                      value={this.state.interval}
+                      onChange={this.setInterval} ></Slider>
+                  </View>
+                </View>
               </View>
-              <View className='switch-list__item'>
-                <View className='switch-list__text'>循环播放</View>
-                <Switch checked={isCircular} onChange={this.setCircular} ></Switch>
-              </View>
             </View>
           </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
-              <Text>幻灯片切换时长(ms)</Text>
-            </View>
-            <View className='page-section-spacing-reset'>
-              <Slider
-                showValue
-                step={1}
-                min={500}
-                max={2000}
-                value={duration}
-                onChange={this.setDuration}></Slider>
-            </View>
-          </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
-              <Text>自动播放间隔时长(ms)</Text>
-            </View>
-            <View className='page-section-spacing-reset'>
-              <Slider
-                showValue
-                step={1}
-                min={2000}
-                max={10000}
-                value={this.state.interval}
-                onChange={this.setInterval} ></Slider>
-            </View>
-          </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>Swiper 纵向滑动</Text>
             </View>
-            <Swiper
-              slideMult='10'
-              className='test-h'
-              indicatorColor='#999'
-              indicatorActiveColor='#333'
-              vertical
-              circular={verticalIsCircular}
-              indicatorDots={verticalHasIndicatorDots}
-              autoplay={verticalIsAutoplay}
-              preMargin='20'>
-              <SwiperItem>
-                <View
-                  className='content'
-                  style='height:100%;background-color:rgb(26,173,25);'>
-                  A
-                </View>
-              </SwiperItem>
-              <SwiperItem>
-                <View
-                  className='content'
-                  style='height:100%;background-color:rgb(39,130,215);'>
-                  B
-                </View>
-              </SwiperItem>
-              <SwiperItem>
-                <View
-                  className='content'
-                  style='height:100%;background-color:rgb(241,241,241);color: #333;'>
-                  C
-                </View>
-              </SwiperItem>
-            </Swiper>
-          </View>
-          <View className='page-section'>
+            <View className='example-body'>
+              <Swiper
+                slideMult='10'
+                className='test-h'
+                indicatorColor='#999'
+                indicatorActiveColor='#333'
+                vertical
+                circular={verticalIsCircular}
+                indicatorDots={verticalHasIndicatorDots}
+                autoplay={verticalIsAutoplay}
+                preMargin='20'>
+                <SwiperItem>
+                  <View className='demo-text-1'></View>
+                </SwiperItem>
+                <SwiperItem>
+                  <View className='demo-text-2'></View>
+                </SwiperItem>
+                <SwiperItem>
+                  <View className='demo-text-3'></View>
+                </SwiperItem>
+              </Swiper>
+            </View>
             <View className='switch-list'>
               <View className='switch-list__item'>
                 <View className='switch-list__text'>指示点</View>

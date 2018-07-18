@@ -266,3 +266,27 @@ form {
     border-bottom: 1px solid #d8d8d8;
   }
 }
+
+
+
+
+// components pages style
+
+.components-page{
+  font-size: 32px;
+  &__body{
+    padding: 0 40px;
+  }
+  .example{
+    margin-bottom: 60px;
+    &-header{
+      text-align: center;
+      font-size: 34px;
+      color: #999;
+      margin-bottom: 20px;
+    }
+    &-body{
+
+    }
+  }
+}

@@ -2199,6 +2199,12 @@ eslint-config-standard-jsx@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/eslint-config-standard-jsx/-/eslint-config-standard-jsx-5.0.0.tgz#4abfac554f38668e0078c664569e7b2384e5d2aa"
 
+eslint-config-taro@^0.0.70:
+  version "0.0.70"
+  resolved "https://registry.yarnpkg.com/eslint-config-taro/-/eslint-config-taro-0.0.70.tgz#05b72bced95037683778d952dd9a0494dfa781c8"
+  dependencies:
+    eslint-plugin-taro "0.0.70"
+
 eslint-import-resolver-node@^0.3.1:
   version "0.3.2"
   resolved "https://registry.npmjs.org/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
@@ -2263,6 +2269,12 @@ eslint-plugin-react@^7.9.1:
 eslint-plugin-standard@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/eslint-plugin-standard/-/eslint-plugin-standard-3.1.0.tgz#2a9e21259ba4c47c02d53b2d0c9135d4b1022d47"
+
+eslint-plugin-taro@0.0.70:
+  version "0.0.70"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-taro/-/eslint-plugin-taro-0.0.70.tgz#40d44387060f01334687032ae14ce94315bdef04"
+  dependencies:
+    has "^1.0.1"
 
 eslint-scope@^3.7.1, eslint-scope@~3.7.1:
   version "3.7.1"

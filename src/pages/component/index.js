@@ -83,9 +83,6 @@ export default class Index extends Component {
         }
       ]
     }
-    // this.state.list.forEach(item => {
-    //   item.icon = require(`../../asset/component/${item.id}.png`)
-    // })
   }
   kindToggle = e => {
     const id = e.currentTarget.id

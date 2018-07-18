@@ -34,10 +34,18 @@ export default class PageView extends Component {
 
   render() {
     return (
-      <View>
-        <Header title='Camera'></Header>
-        <Button type='primary' onClick={this.toggleDevice}>开启{this.state.devicePosition == 'back' ? '后置' : '前置'}镜头</Button>
-        <Camera className='cammer-content' onStop={this.handleStop} onError={this.handleError} devicePosition={this.state.devicePosition}></Camera>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Camera'></Header>
+        </View>
+        <View className='components-page__body'>
+          <View className='components-page__body-example example'>
+            <View className='example-body'>
+              <Button type='primary' onClick={this.toggleDevice}>开启{this.state.devicePosition == 'back' ? '前置' : '后置'}镜头</Button>
+              <Camera className='cammer-content' onStop={this.handleStop} onError={this.handleError} devicePosition={this.state.devicePosition}></Camera></View>
+          </View>
+        </View>
+
       </View>
     )
   }

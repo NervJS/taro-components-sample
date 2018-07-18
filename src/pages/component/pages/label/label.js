@@ -4,6 +4,7 @@ import { Component } from '@tarojs/taro'
 import {
   View,
   Text,
+  CheckboxGroup,
   Checkbox,
   Label,
   Radio,
@@ -12,13 +13,15 @@ import {
 
 import Header from '../../../../components/head/head'
 
+import './label.scss'
+
 export default class PageLabel extends Component {
 
   config = {
     navigationBarTitleText: 'Label组件'
   }
 
-  constructor () {
+  constructor() {
     super(...arguments)
   }
 
@@ -33,73 +36,63 @@ export default class PageLabel extends Component {
     })
   }
 
-  render () {
+  render() {
     return (
-      <View className='container'>
-        <Header title='Label'></Header>
-        <View className='page-body'>
-          <View className='page-section'>
-            <View className='page-section-title'>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Label'></Header>
+        </View>
+        <View className='components-page__body'>
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>表单组件在label内</Text>
             </View>
-            <View className='page-section-spacing-reset'>
-              <Label for='1' key='1'>
-                <Checkbox value='美国'>美国</Checkbox>
-              </Label>
-            </View>
-            <View
-              className='page-section-spacing-reset'
-              style='margin-top:15px'>
-              <Label for='2' key='2'>
-                <Checkbox value='中国' checked>
-                  中国
+            <View className='example-body'>
+              <CheckboxGroup>
+                <Label className='example-body__label' for='1' key='1'>
+                  <Checkbox value='美国'>美国</Checkbox>
+                </Label>
+                <Label className='example-body__label' for='2' key='2'>
+                  <Checkbox value='中国' checked>
+                    中国
                 </Checkbox>
-              </Label>
+                </Label>
+              </CheckboxGroup>
             </View>
           </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>label用for标识表单组件</Text>
             </View>
-            <RadioGroup>
-              <View className='page-section-spacing-reset'>
-                <Label for='3' key='3'>
+            <View className='example-body'>
+              <RadioGroup>
+                <Label className='example-body__label' for='3' key='3'>
                   <Radio value='USA'>USA</Radio>
                 </Label>
-              </View>
-              <View
-                className='page-section-spacing-reset'
-                style='margin-top:15px'>
-                <Label for='4' key='4'>
+                <Label className='example-body__label' for='4' key='4'>
                   <Radio value='CHN' checked>
                     CHN
                   </Radio>
                 </Label>
-              </View>
-            </RadioGroup>
+              </RadioGroup>
+            </View>
           </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
-              <Text>表单组件在label内</Text>
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
+              <Text>表单组件在Label外</Text>
             </View>
-            <View className='page-section-spacing-reset'>
-              <Label for='5' key='5' onClick={this.handleChange}>
-                <Checkbox value='选项一' checked={this.state.checked}>
-                  选项一
-                </Checkbox>
-              </Label>
-            </View>
-            <View
-              className='page-section-spacing-reset'
-              style='margin-top:15px'>
-              <Label for='6' key='6'>
-                <Checkbox value='选项二'>选项二</Checkbox>
-              </Label>
-            </View>
-            <View style='margin-top:auto;margin-left:auto;font-size:16px;color:#586C94;margin-top:15px;'>
-              <Label onClick={this.handleChange}>
-                点击该label下的文字默认选中第一个checkbox
-              </Label>
+            <View className='example-body'>
+              <RadioGroup>
+                <Label className='example-body__label' for='5' key='5'>
+                  <Radio value='GuangZhou'>广州</Radio>
+                </Label>
+                <Label className='example-body__label' for='6' key='6'>
+                  <Radio value='ShenZhen'>深圳</Radio>
+                </Label>
+              </RadioGroup>
+              <View className='example-body__button'>
+                <Label for='5'>点击此 Label 广州将被选中</Label>
+              </View>
             </View>
           </View>
         </View>

@@ -11,7 +11,7 @@ export default class PageView extends Component {
     navigationBarTitleText: 'Progress组件'
   }
 
-  constructor () {
+  constructor() {
     super(...arguments)
     this._timmer = null
   }
@@ -47,50 +47,49 @@ export default class PageView extends Component {
     })
   }
 
-  render () {
+  render() {
     const { progress } = this.state
     return (
-      <View className='container'>
-        <Header title='Progress'></Header>
-        <View className='page-body'>
-          <View className='page-section'>
-            <View className='progress-block'>
-              <View className='page-section-spacing'>
-                <Progress percent={20} showInfo strokeWidth={2} ></Progress>
-              </View>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Progress'></Header>
+        </View>
+        <View className='components-page__body'>
+          <View className='components-page__body-example example'>
+            <View className='example-progress'>
+              <Progress percent={20} showInfo strokeWidth={2} ></Progress>
             </View>
-            <View className='progress-block'>
-              <View className='page-section-spacing'>
-                <Progress percent={40} strokeWidth={2} active ></Progress>
-              </View>
-              <View className='page-section-spacing'>
-                <Progress percent={60} strokeWidth={2} active ></Progress>
-              </View>
-              <View className='page-section-spacing'>
-                <Progress
-                  percent={80}
-                  strokeWidth={2}
-                  active
-                  activeColor='blue' ></Progress>
-              </View>
+            <View className='example-progress'>
+              <Progress percent={40} strokeWidth={2} active ></Progress>
             </View>
-            <View className='progress-block'>
-              <View className='page-section-spacing '>
-                <Progress
-                  active
-                  showInfo
-                  strokeWidth={2}
-                  percent={progress}
-                  activeColor='#3C7FE8' ></Progress>
-                <View>
-                  <Button onClick={this.handleStart}>加载</Button>
-                  <Button onClick={this.handleStop}>暂停</Button>
-                  <Button onClick={this.handleReset}>重置</Button>
-                </View>
-              </View>
+            <View className='example-progress'>
+              <Progress percent={60} strokeWidth={2} active ></Progress>
+            </View>
+            <View className='example-progress'>
+              <Progress
+                percent={80}
+                strokeWidth={2}
+                active
+                activeColor='blue' ></Progress>
+            </View>
+          </View>
+          <View className='components-page__body-example example'>
+            <View className='example-progress'>
+              <Progress
+                active
+                showInfo
+                strokeWidth={2}
+                percent={progress}
+                activeColor='#3C7FE8' ></Progress>
+            </View>
+            <View>
+              <Button onClick={this.handleStart}>加载</Button>
+              <Button onClick={this.handleStop}>暂停</Button>
+              <Button onClick={this.handleReset}>重置</Button>
             </View>
           </View>
         </View>
+
       </View>
     )
   }

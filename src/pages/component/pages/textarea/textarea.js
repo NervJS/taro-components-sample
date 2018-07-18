@@ -1,3 +1,5 @@
+import './textarea.scss'
+
 import { Component } from '@tarojs/taro'
 import { View, Text, Textarea, Button } from '@tarojs/components'
 
@@ -23,9 +25,9 @@ export default class PageTextarea extends Component {
     })
   }
 
-  blur= () => {
+  blur = () => {
     console.log('blur');
-    
+
   }
 
   focus = () => {
@@ -38,28 +40,35 @@ export default class PageTextarea extends Component {
 
   render() {
     return (
-      <View className='container'>
-        <Header title='Textarea'></Header>
-        <Button type='primary' onClick={this.handleClick}>点击设置值到第一个Textarea</Button>
-        <View className='page-body'>
-          <View className='page-section'>
-            <View className='page-section-title'>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Textarea'></Header>
+        </View>
+        <View className='components-page__body'>
+
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>输入区域高度自适应，不会出现滚动条</Text>
             </View>
-            <View className='textarea-container'>
+            <View className='example-body'>
+              <View className='example-body__button'>
+                <Button size='mini' type='primary' onClick={this.handleClick}>点击设置值到第一个Textarea</Button>
+              </View>
               <Textarea onFocus={this.focus} onBlur={this.blur} value={this.state.value} placeholder='这是一个Textarea' autoHeight onInput={this.input}></Textarea>
             </View>
           </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
+
+          <View className='components-page__body-example example'>
+            <View className='example-header'>
               <Text>这是一个可以自动聚焦的textarea</Text>
             </View>
-            <View className='textarea-container'>
+            <View className='example-body'>
               <Textarea autoFocus placeholder='这是一个Textarea'></Textarea>
             </View>
           </View>
+
         </View>
-      </View>
+      </View >
     )
   }
 }
