@@ -11,7 +11,7 @@ export default class PageCheckbox extends Component {
   }
 
   state = {
-    selectValues: ['中国'],
+    selectValues: ['中国', '法国'],
     list: [
       {
         value: '美国',
@@ -80,7 +80,7 @@ export default class PageCheckbox extends Component {
               <Text>推荐展示样式</Text>
             </View>
             <View className='select-box'>
-              当前选择: {this.state.selectValues}
+              当前选择: {this.state.selectValues.join(',')}
             </View>
             <View>
               <View className='checkbox-list'>

@@ -71,10 +71,10 @@ export default class PageRadio extends Component {
               <Radio value='选中' checked>
                 选中
               </Radio>
-              <Radio style='margin-left: 50px' value='未选中'>
+              <Radio style='margin-left: 30px' value='未选中'>
                 未选中
               </Radio>
-              <Radio style='margin-left: 50px' checked={this.state.isChecked} onChange={this.handleChange}>
+              <Radio style='margin-left: 30px' checked={this.state.isChecked} onChange={this.handleChange}>
                 数据绑定
               </Radio>
             </View>

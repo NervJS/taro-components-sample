@@ -1,3 +1,4 @@
+import './form.scss'
 import { Component } from '@tarojs/taro'
 
 // RadioGroup ,Form ,CheckboxGroup
@@ -90,7 +91,7 @@ export default class PageForm extends Component {
                 <Text>switch</Text>
               </View>
               <View className='page-section-spacing-reset'>
-                <Switch onChange={this.onHandleChange} name='switch' ></Switch>
+                <Switch onChange={this.onHandleChange} name='switch' className="form-switch"></Switch>
               </View>
             </View>
             <View className='page-section'>

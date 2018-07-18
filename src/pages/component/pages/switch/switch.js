@@ -44,7 +44,7 @@ export default class PageSwitch extends Component {
                 <Switch checked color='#6190E8'></Switch>
               </View>
               <View className='switch-list__item'>
-                <View className='switch-list__text'>CheckBox形式</View>
+                <View className='switch-list__text'>CheckBox形式(h5暂不支持)</View>
                 <Switch type='checkbox'></Switch>
               </View>
             </View>
