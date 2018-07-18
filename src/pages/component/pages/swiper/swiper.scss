@@ -40,9 +40,14 @@
         text-align: center;
         margin-bottom: 15px;
       }
-      &-body {
-
-      }
+      &-body {}
     }
+  }
+}
+.demo-text {
+  &-1,
+  &-2,
+  &-3 {
+    height: 100%;
   }
 }

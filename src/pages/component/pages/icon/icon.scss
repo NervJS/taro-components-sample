@@ -6,18 +6,6 @@
   border-bottom: 2px dashed #999;
   min-height: 120px;
 
-  icon {
-    position: absolute;
-    left: 0;
-  }
-
-  &.icon_sml {
-    icon {
-      position: absolute;
-      left: 40px;
-      top:10px;
-    }
-  }
 }
 
 .icon_right {
