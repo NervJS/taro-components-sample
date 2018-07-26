@@ -35,7 +35,7 @@ export default class PagePicker extends Component {
       return this.state.multiSelector[index][item]
     })
     this.setState({
-      mulitSelectorValues : values
+      mulitSelectorValues : values.join(',')
     })
   }
 
