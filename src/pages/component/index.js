@@ -53,6 +53,7 @@ export default class Index extends Component {
             'input',
             'label',
             'picker',
+            'picker-view',
             'radio',
             'slider',
             'switch',

@@ -22,6 +22,7 @@ class App extends Component {
       'pages/component/pages/text/text',
       'pages/component/pages/label/label',
       'pages/component/pages/picker/picker',
+      'pages/component/pages/picker-view/picker-view',
       'pages/component/pages/slider/slider',
       'pages/component/pages/switch/switch',
       'pages/component/pages/textarea/textarea',
