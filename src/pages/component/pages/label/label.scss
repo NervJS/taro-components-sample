@@ -2,7 +2,9 @@
   text-align: center;
   &__label {
     margin-bottom: 20px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__button{
     margin-top: 100px;

@@ -25,6 +25,7 @@
   background-color: #ffffff;
   line-height: 1.41176471;
   font-size: 28px;
+  // transform: translateY(-50%);
   transition: 0.3s;
 }
 .navigator-box-show {
@@ -59,7 +60,7 @@
 }
 .navigator-arrow:after {
   content: ' ';
-  display: inline-block;
+  // display: inline-block;
   height: 18px;
   width: 18px;
   border-width: 2px 2px 0 0;
