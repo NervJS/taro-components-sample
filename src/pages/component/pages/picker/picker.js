@@ -1,6 +1,6 @@
 import './picker.scss'
 
-import { Component } from '@tarojs/taro'
+import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Picker } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
@@ -50,9 +50,9 @@ export default class PagePicker extends Component {
   }
 
   handleDateChange = e => {
-    this.setState({
-      dateSel: e.detail.value.join('-')
-    })
+    const val = e.detail.value
+    const dateSel = Array.isArray(val) ? val.join('-') : val
+    this.setState({ dateSel })
   }
 
   render () {
@@ -77,22 +77,29 @@ export default class PagePicker extends Component {
               </Picker>
             </View>
           </View>
-          <View className='page-section'>
-            <View className='page-section-title'>
-              <Text>多行选择器</Text>
+          {Taro.getEnv() !== Taro.ENV_TYPE.ALIPAY
+          ? <View className='page-section'>
+              <View className='page-section-title'>
+                <Text>多行选择器</Text>
+              </View>
+              <View>
+                <Picker
+                  mode='multiSelector'
+                  range={multiSelector}
+                  onChange={this.handleMulitChange}
+                  onColumnchange={this.handleColumnchange}>
+                  <View className='picker'>
+                    当前选择：{mulitSelectorValues}
+                  </View>
+                </Picker>
+              </View>
             </View>
-            <View>
-              <Picker
-                mode='multiSelector'
-                range={multiSelector}
-                onChange={this.handleMulitChange}
-                onColumnchange={this.handleColumnchange}>
-                <View className='picker'>
-                  当前选择：{mulitSelectorValues}
-                </View>
-              </Picker>
+          : <View className='page-section'>
+              <View className='page-section-title'>
+                <Text>支付宝小程序暂不支持多列选择器</Text>
+              </View>
             </View>
-          </View>
+          }
           <View className='page-section'>
             <View className='page-section-title'>
               <Text>时间选择器</Text>

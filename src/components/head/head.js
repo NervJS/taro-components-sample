@@ -1,6 +1,10 @@
 import { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
 export default class Header extends Component {
+  static options = {
+    addGlobalClass: true
+  }
+
   render() {
     return (
       <View className="page-head">

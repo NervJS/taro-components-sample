@@ -27,7 +27,7 @@ export default class PageSwitch extends Taro.Component {
           <View className='components-page__body-example example'>
             <View className='example-body'>
               {
-                Taro.getEnv() == Taro.ENV_TYPE.WEAPP ? <View className='example-body__navigators'>
+                Taro.getEnv() == Taro.ENV_TYPE.WEAPP || Taro.getEnv() == Taro.ENV_TYPE.ALIPAY ? <View className='example-body__navigators'>
                   <Navigator
                     url='/pages/component/pages/navigatePage/navigatePage'
                     className='example-body__navigators-item'>

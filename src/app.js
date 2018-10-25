@@ -48,13 +48,13 @@ class App extends Component {
           pagePath: 'pages/component/index',
           text: '组件',
           iconPath: 'asset/component/view.png',
-          selectedIconPath: 'asset/component/view-red.png'
+          selectedIconPath: 'asset/component/viewred.png'
         },
         {
           pagePath: 'pages/about/about',
           text: '关于',
           iconPath: 'asset/component/nav.png',
-          selectedIconPath: 'asset/component/nav-red.png'
+          selectedIconPath: 'asset/component/navred.png'
         }
       ]
     }

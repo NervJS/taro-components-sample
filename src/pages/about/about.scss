@@ -1,3 +1,8 @@
+page {
+  overflow: hidden;
+}
+
+
 .about {
   text-align: center;
   margin-top: 150px;
@@ -5,6 +10,6 @@
   .info{
     margin-top: 50px;
     font-size: 28px;
-    line-height: 1.5rem;
+    line-height: 1.5;
   }
 }
