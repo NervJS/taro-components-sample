@@ -1,6 +1,6 @@
 {
-	"miniprogramRoot": "./dist",
-	"projectname": "taro-components-sample",
+	"miniprogramRoot": "dist/",
+	"projectname": "taro-components",
 	"description": "",
 	"appid": "touristappid",
 	"setting": {
