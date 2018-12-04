@@ -5,8 +5,6 @@ import { View, Audio } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-import './audio.scss'
-
 export default class PageView extends Component {
 
   config = {

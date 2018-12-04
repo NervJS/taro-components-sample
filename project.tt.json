@@ -1,0 +1,11 @@
+{
+  "projectname": "taro-components-sample",
+  "description": "taro-components-sample",
+  "appid": "体验appId",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  }
+}
