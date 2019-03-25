@@ -1,7 +1,7 @@
 import './index.scss'
 
 import Taro, { Component } from '@tarojs/taro'
-import { View, Image } from '@tarojs/components'
+import { View, Image, Text } from '@tarojs/components'
 import logo from '../../asset/component/logo.png'
 import viewPng from '../../asset/component/view.png'
 import contentPng from '../../asset/component/content.png'
@@ -70,7 +70,7 @@ export default class Index extends Component {
           id: 'media',
           name: '媒体组件',
           open: false,
-          pages: ['image', 'audio', 'video','camera']
+          pages: ['image', 'audio', 'video', 'camera']
         },
         {
           id: 'map',
@@ -85,6 +85,7 @@ export default class Index extends Component {
       ]
     }
   }
+
   kindToggle = e => {
     const id = e.currentTarget.id
     const list = this.state.list
@@ -112,7 +113,7 @@ export default class Index extends Component {
         <View className='index-hd'>
           <Image className='index-logo' src={logo} />
           <View className='index-desc'>
-            以下将展示Taro官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式。
+            <Text className='index-desc_text'>以下将展示Taro官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式。</Text>
           </View>
         </View>
         <View className='index-bd'>
@@ -143,7 +144,9 @@ export default class Index extends Component {
                       id={item.id}
                       className={item.hdClass}
                       onClick={this.kindToggle}>
-                      <View className='kind-list-text'>{item.name}</View>
+                      <View className='kind-list-text'>
+                        <Text>{item.name}</Text>
+                      </View>
                       <Image className='kind-list-img' src={item.imgSrc} />
                     </View>
                     <View className={item.bdClass}>

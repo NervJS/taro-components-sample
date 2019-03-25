@@ -1,9 +1,11 @@
+@import '@styles/mixins.scss';
+
 .page__con__list {
   position: relative;
   display: flex;
   margin-bottom: 40px;
   padding-bottom: 40px;
-  border-bottom: 2px dashed #999;
+  @include border(bottom, 2px, dashed, #999);
   min-height: 120px;
 
 }

@@ -1,9 +1,13 @@
+@import '@styles/reset.scss';
+@import '@styles/mixins.scss';
+
 html, body {
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: 0;
 }
+
 .navigate_btn {
   width: 600px;
   height: 80px;
@@ -30,6 +34,7 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 form {
   width: 100%;
 }
@@ -40,7 +45,7 @@ textarea {
   border: 0;
   resize: none;
   width: 100%;
-  height:300px;
+  height: 300px;
   color: inherit;
   font-size: 1em;
   line-height: inherit;
@@ -51,13 +56,14 @@ textarea {
 .strong {
   font-weight: bold;
 }
+
 .tc {
   text-align: center;
 }
 
-.taro_page{
+.taro_page {
   min-height: 100%;
-  background-color: #f8f8f8 !important;
+  background-color: #f8f8f8;
 }
 
 /* page */
@@ -68,24 +74,28 @@ textarea {
   min-height: 100%;
   justify-content: space-between;
   font-size: 32px;
-  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  @include eject(font-family, ' -apple-system-font, Helvetica Neue, Helvetica, sans-serif');
 }
+
 .page-head {
   padding: 60px 50px 80px;
   text-align: center;
 }
+
 .page-head-title {
-  display: inline-block;
+  //display: inline-block;
   padding: 0 40px 20px 40px;
   font-size: 32px;
   color: #bebebe;
 }
+
 .page-head-line {
   margin: 0 auto;
   width: 150px;
   height: 2px;
   background-color: #d8d8d8;
 }
+
 .page-head-desc {
   padding-top: 20px;
   color: #9b9b9b;
@@ -95,18 +105,21 @@ textarea {
 .page-body {
   width: 100%;
   flex-grow: 1;
-  overflow-x: hidden;
+  @include eject(overflow-x, hidden);
 }
+
 .page-body-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
+
 .page-body-wording {
   text-align: center;
   padding: 200px 100px;
 }
+
 .page-body-info {
   display: flex;
   flex-direction: column;
@@ -115,15 +128,18 @@ textarea {
   width: 100%;
   padding: 50px 0 150px 0;
 }
+
 .page-body-title {
   margin-bottom: 100px;
   font-size: 32px;
 }
+
 .page-body-text {
   font-size: 30px;
   line-height: 26px;
   color: #ccc;
 }
+
 .page-body-text-small {
   font-size: 24px;
   color: #000;
@@ -136,6 +152,7 @@ textarea {
   color: #1aad19;
   font-size: 0;
 }
+
 .icon-foot {
   width: 152px;
   height: 23px;
@@ -146,25 +163,31 @@ textarea {
   text-align: center;
   margin-bottom: 60px;
 }
+
 .page-section_center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .page-section:last-child {
   margin-bottom: 0;
 }
+
 .page-section-gap {
-  box-sizing: border-box;
+  @include eject(box-sizing, border-box);
   padding: 0 30px;
 }
+
 .page-section-spacing {
-  box-sizing: border-box;
+  @include eject(box-sizing, border-box);
   padding: 0 80px;
 }
-.page-section-spacing-reset{
+
+.page-section-spacing-reset {
   padding: 0 30px;
 }
+
 .page-section-title {
   font-size: 28px;
   color: #999999;
@@ -172,17 +195,19 @@ textarea {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .page-section-gap .page-section-title {
   padding-left: 0;
   padding-right: 0;
 }
+
 .page-section-ctn {
 }
 
 /* widget */
 .btn-area {
   margin-top: 60px;
-  box-sizing: border-box;
+  @include eject(box-sizing, border-box);
   width: 100%;
   padding: 0 30px;
 }
@@ -193,13 +218,16 @@ textarea {
   border: 2px solid #d9d9d9;
   position: relative;
 }
+
 .image-plus-nb {
   border: 0;
 }
+
 .image-plus-text {
   color: #888888;
   font-size: 28px;
 }
+
 .image-plus-horizontal {
   position: absolute;
   top: 50%;
@@ -207,8 +235,9 @@ textarea {
   background-color: #d9d9d9;
   width: 4px;
   height: 80px;
-  transform: translate(-50%, -50%);
+  @include eject(transform, translate(-50%, -50%));
 }
+
 .image-plus-vertical {
   position: absolute;
   top: 50%;
@@ -216,7 +245,7 @@ textarea {
   background-color: #d9d9d9;
   width: 80px;
   height: 4px;
-  transform: translate(-50%, -50%);
+  @include eject(transform, translate(-50%, -50%));
 }
 
 .demo-text-1 {
@@ -227,13 +256,15 @@ textarea {
   color: #ffffff;
   font-size: 36px;
 }
+
 .demo-text-1:before {
   content: 'A';
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  @include eject(transform, translate(-50%, -50%));
 }
+
 .demo-text-2 {
   position: relative;
   align-items: center;
@@ -242,13 +273,15 @@ textarea {
   color: #ffffff;
   font-size: 36px;
 }
+
 .demo-text-2:before {
   content: 'B';
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  @include eject(transform, translate(-50%, -50%));
 }
+
 .demo-text-3 {
   position: relative;
   align-items: center;
@@ -257,17 +290,18 @@ textarea {
   color: #353535;
   font-size: 36px;
 }
+
 .demo-text-3:before {
   content: 'C';
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  @include eject(transform, translate(-50%, -50%));
 }
 
-.wxapp-block{
+.wxapp-block {
   text-align: center;
-  .sub-title{
+  .sub-title {
     display: inline-block;
     padding: 60px 50px 10px;
     margin-bottom: 40px;
@@ -277,25 +311,22 @@ textarea {
   }
 }
 
-
-
-
 // components pages style
 
-.components-page{
+.components-page {
   font-size: 32px;
-  &__body{
+  &__body {
     padding: 0 40px;
   }
-  .example{
+  .example {
     margin-bottom: 60px;
-    &-header{
+    &-header {
       text-align: center;
       font-size: 34px;
       color: #999;
       margin-bottom: 20px;
     }
-    &-body{
+    &-body {
 
     }
   }

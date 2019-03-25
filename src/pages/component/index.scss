@@ -1,22 +1,32 @@
+@import '@styles/mixins.scss';
+
 .index-hd {
   padding: 80px;
   text-align: center;
+  align-items: center;
 }
+
 .index-bd {
   padding: 0 30px 40px;
 }
+
 .index-ft {
   padding-bottom: 20px;
   text-align: center;
 }
+
 .index-logo {
   width: 86px;
   height: 86px;
 }
+
 .index-desc {
   margin-top: 20px;
-  color: #888888;
   font-size: 28px;
+}
+
+.index-desc_text {
+  color: #888888;
 }
 
 .navigator-box {
@@ -25,19 +35,22 @@
   background-color: #ffffff;
   line-height: 1.41176471;
   font-size: 28px;
-  transform: translateY(-50%);
-  transition: 0.3s;
+  @include eject(transform, translateY(-50%));
+  @include eject(transition, 0.3s);
 }
+
 .navigator-box-show {
   opacity: 1;
   transform: translateY(0);
 }
+
 .navigator {
   padding: 20px 30px;
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .navigator:before {
   content: ' ';
   position: absolute;
@@ -48,16 +61,20 @@
   border-top: 1px solid #d8d8d8;
   color: #d8d8d8;
 }
+
 .navigator:first-child:before {
   display: none;
 }
+
 .navigator-text {
   flex: 1;
 }
+
 .navigator-arrow {
   padding-right: 26px;
   position: relative;
 }
+
 .navigator-arrow:after {
   content: ' ';
   display: inline-block;
@@ -83,30 +100,38 @@
   border-radius: 4px;
   overflow: hidden;
 }
+
 .kind-list-item:first-child {
   margin-top: 0;
 }
+
 .kind-list-text {
   flex: 1;
 }
+
 .kind-list-img {
   width: 60px;
   height: 60px;
 }
+
 .kind-list-item-hd {
   padding: 30px;
   display: flex;
+  flex-direction: row;
   align-items: center;
 
-  transition: opacity 0.3s;
+  @include eject(transition, opacity 0.3s);
 }
+
 .kind-list-item-hd-show {
   opacity: 0.2;
 }
+
 .kind-list-item-bd {
   height: 0;
   overflow: hidden;
 }
+
 .kind-list-item-bd-show {
   height: auto;
 }
