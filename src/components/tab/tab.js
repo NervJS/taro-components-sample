@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { connect } from '@tarojs/redux'
-import { View, Image, Button } from '@tarojs/components'
+import { View, Image, Button ,Text} from '@tarojs/components'
 
 import { diao } from '../../utils'
 
@@ -21,11 +21,11 @@ class Tab extends Component {
   render () {
     return (
       <View className='tab'>
-        <Button className='add_btn' onClick={this.props.inc}>+</Button>
-        <Button className='dec_btn' onClick={this.props.dec}>-</Button>
-        <Button className='dec_btn' onClick={this.props.asyncInc}>async</Button>
+        <Button className='add_btn' onClick={this.props.inc}><Text>+</Text></Button>
+        <Button className='dec_btn' onClick={this.props.dec}><Text>-</Text></Button>
+        <Button className='dec_btn' onClick={this.props.asyncInc}><Text>async</Text></Button>
         <View>{this.props.counter.num}</View>
-        <Image src={mv}></Image>
+        <Image src={mv}/>
         <View onClick={this.handler}>componentTab{this.props.t}</View>
       </View>
     )

@@ -156,10 +156,9 @@ export default class Index extends Component {
                             <View
                               onClick={this.goToComponent.bind(this, page)}
                               key={index}
-                              className='navigator'>
-                              <View className='navigator-text'>
-                                {page.page}
-                              </View>
+                              className='navigator'
+                            >
+                              <Text className='navigator-text'>{page.page}</Text>
                               <View className='navigator-arrow' />
                             </View>
                           )
