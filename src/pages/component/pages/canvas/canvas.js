@@ -1,11 +1,12 @@
 import './canvas.scss'
 
-import Taro, { Component } from '@tarojs/taro'
+import Taro from '@tarojs/taro'
+import React from 'react'
 import { View, Text } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-export default class PageView extends Component {
+export default class PageView extends React.Component {
 
   config = {
     navigationBarTitleText: 'Canvas组件'

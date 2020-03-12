@@ -1,6 +1,7 @@
 import './index.scss'
 
 import Taro, { Component } from '@tarojs/taro'
+import React from 'react'
 import { View, Image, Text } from '@tarojs/components'
 import logo from '../../asset/component/logo.png'
 import viewPng from '../../asset/component/view.png'
@@ -21,7 +22,7 @@ const PNGS = {
   canvasPng
 }
 
-export default class Index extends Component {
+export default class Index extends React.Component {
   config = {
     navigationBarTitleText: 'Taro基础组件展示'
   }

@@ -1,11 +1,10 @@
 import './button.scss'
-
-import { Component } from '@tarojs/taro'
+import React from 'react'
 import { View, Button } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-export default class PageButton extends Component {
+export default class PageButton extends React.Component {
 
   config = {
     navigationBarTitleText: 'Button组件'

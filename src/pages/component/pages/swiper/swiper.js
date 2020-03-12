@@ -1,4 +1,5 @@
 import './swiper.scss'
+import React from 'react'
 
 import { Component } from '@tarojs/taro'
 import {
@@ -12,7 +13,7 @@ import {
 
 import Header from '../../../../components/head/head'
 
-export default class PageView extends Component {
+export default class PageView extends React.Component {
 
   config = {
     navigationBarTitleText: 'Swiper组件'

@@ -1,11 +1,11 @@
-import { Component } from '@tarojs/taro'
 import { View, Text, Input } from '@tarojs/components'
+import React from 'react'
 
 import Header from '../../../../components/head/head'
 
 import './input.scss'
 
-export default class PageInput extends Component {
+export default class PageInput extends React.Component {
   config = {
     navigationBarTitleText: 'Input组件'
   }

@@ -1,13 +1,12 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View, Image } from '@tarojs/components'
+import React from 'react'
+import { View, Image, Navigator } from '@tarojs/components'
 // bug
 import icon_foot from '../../asset/common/icon_foot.png'
-console.log(icon_foot)
 import footImage from '../../asset/common/icon_foot.png'
-export default class Foot extends Component {
+export default class Foot extends React.Component {
   render() {
     return (
-      <navigator
+      <Navigator
         className="page-foot"
         url="/pages/component/index"
         hoverClass="none"
@@ -16,7 +15,7 @@ export default class Foot extends Component {
           className="icon-foot"
           src={footImage}
         />
-      </navigator>
+      </Navigator>
     )
   }
 }

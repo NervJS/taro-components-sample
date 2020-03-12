@@ -1,11 +1,10 @@
 import './scroll-view.scss'
-
-import { Component } from '@tarojs/taro'
+import React from 'react'
 import { View, Text, ScrollView, Button } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-export default class PageView extends Component {
+export default class PageView extends React.Component {
 
   config = {
     navigationBarTitleText: 'ScrollView组件'

@@ -1,4 +1,4 @@
-import { Component } from '@tarojs/taro'
+import React from 'react'
 
 // RadioGroup
 import {
@@ -15,7 +15,7 @@ import Header from '../../../../components/head/head'
 
 import './label.scss'
 
-export default class PageLabel extends Component {
+export default class PageLabel extends React.Component {
 
   config = {
     navigationBarTitleText: 'Label组件'

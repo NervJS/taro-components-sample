@@ -1,5 +1,5 @@
 import './form.scss'
-import { Component } from '@tarojs/taro'
+import React from 'react'
 
 import {
   View,
@@ -18,7 +18,7 @@ import {
 
 import Header from '../../../../components/head/head'
 
-export default class PageForm extends Component {
+export default class PageForm extends React.Component {
 
   config = {
     navigationBarTitleText: 'Form组件'

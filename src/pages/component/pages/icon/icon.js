@@ -1,11 +1,10 @@
 import './icon.scss'
-
-import { Component } from '@tarojs/taro'
 import { View, Icon } from '@tarojs/components'
+import React from 'react'
 
 import Header from '../../../../components/head/head'
 
-export default class PageView extends Component {
+export default class PageView extends React.Component {
 
   config = {
     navigationBarTitleText: 'Icon组件'

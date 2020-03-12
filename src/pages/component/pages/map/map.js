@@ -1,11 +1,12 @@
 import './map.scss'
+import React from 'react'
 
-import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Navigator } from '@tarojs/components'
+import Taro from '@tarojs/taro'
+import { View, Text } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-export default class PageView extends Component {
+export default class PageView extends React.Component {
 
   config = {
     navigationBarTitleText: 'Map组件'

@@ -1,11 +1,12 @@
 import './picker.scss'
 
-import Taro, { Component } from '@tarojs/taro'
+import Taro from '@tarojs/taro'
+import React from 'react'
 import { View, Text, Picker } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-export default class PagePicker extends Component {
+export default class PagePicker extends React.Component {
 
   config = {
     navigationBarTitleText: 'Picker组件'

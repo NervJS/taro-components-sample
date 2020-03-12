@@ -1,7 +1,7 @@
-import { Component } from '@tarojs/taro'
+import React from 'react'
 import { View } from '@tarojs/components'
 
-export default class Header extends Component {
+export default class Header extends React.Component {
   static options = {
     addGlobalClass: true
   }

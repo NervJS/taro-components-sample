@@ -1,11 +1,11 @@
 import './checkbox.scss'
+import React from 'react'
 
-import { Component } from '@tarojs/taro'
 import { View, Text, Checkbox, Label, CheckboxGroup } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-export default class PageCheckbox extends Component {
+export default class PageCheckbox extends React.Component {
 
   config = {
     navigationBarTitleText: 'Checkbox组件'

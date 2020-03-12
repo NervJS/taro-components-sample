@@ -1,8 +1,8 @@
 import './about.scss'
 
-import { Component } from '@tarojs/taro'
+import React from 'react'
 import { View, Text } from '@tarojs/components'
-export default class About extends Component {
+export default class About extends React.Component {
   config = {
     navigationBarTitleText: '关于'
   }

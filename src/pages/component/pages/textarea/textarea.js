@@ -1,11 +1,11 @@
 import './textarea.scss'
 
-import { Component } from '@tarojs/taro'
+import React from 'react'
 import { View, Text, Textarea, Button } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
 
-export default class PageTextarea extends Component {
+export default class PageTextarea extends React.Component {
 
   config = {
     navigationBarTitleText: 'Textare组件'

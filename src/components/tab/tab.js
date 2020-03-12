@@ -1,5 +1,5 @@
-import Taro, { Component } from '@tarojs/taro'
-import { connect } from '@tarojs/redux'
+import React from 'react'
+import { connect } from 'react-redux'
 import { View, Image, Button ,Text} from '@tarojs/components'
 
 import { diao } from '../../utils'
@@ -10,7 +10,7 @@ import './tab.scss'
 
 import { increment, decrement, asyncInc } from '../../actions/counter'
 
-class Tab extends Component {
+class Tab extends React.Component {
 
   handler = () => {
     console.log(this.props.t)

@@ -1,7 +1,7 @@
-import { Component } from '@tarojs/taro'
+import React from 'react'
 import { View } from '@tarojs/components'
 
-export default class PageSwitch extends Component {
+export default class PageSwitch extends React.Component {
   constructor () {
     super(...arguments)
   }

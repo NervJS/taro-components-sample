@@ -1,7 +1,9 @@
 import Taro, { Component } from '@tarojs/taro'
+import React from 'react'
+
 import { View, PickerView, PickerViewColumn } from '@tarojs/components'
 
-export default class Picks extends Component {
+export default class Picks extends React.Component {
 
   config = {
     navigationBarTitleText: 'PickerView组件'
