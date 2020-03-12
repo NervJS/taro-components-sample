@@ -19,7 +19,7 @@ const config = {
   designWidth: 750,
   sourceRoot: 'src',
   outputRoot: 'dist',
-  framework: 'react',
+  framework: 'vue',
   plugins: {
     babel: {
       sourceMap: true,

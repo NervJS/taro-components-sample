@@ -2,7 +2,7 @@ import './icon.scss'
 import { View, Icon } from '@tarojs/components'
 import React from 'react'
 
-import Header from '../../../../components/head/head'
+import Header from '../../../../components/head/head.vue'
 
 export default class PageView extends React.Component {
 
