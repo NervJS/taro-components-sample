@@ -9,9 +9,9 @@ page {
   height: 100%;
 }
 
-view,
-text,
-scroll-view {
+taro-view-core,
+taro-text-core,
+taro-scroll-view-core {
   box-sizing: border-box;
 }
 

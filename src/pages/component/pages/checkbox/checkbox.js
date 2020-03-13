@@ -97,7 +97,6 @@ export default class PageCheckbox extends React.Component {
                       return (
                         <Label
                           className='checkbox-list__label'
-                          for={item.value}
                           key={item.value}>
                           <Checkbox
                             className='checkbox-list__checkbox'
