@@ -20,7 +20,7 @@ export default class PagePicker extends React.Component {
     timeSel: '12:01',
     dateSel: '2018-04-22',
     selectorValue: 1,
-    mulitSelectorValues: [],
+    mulitSelectorValues: [0, 0],
     selector: ['美国', '中国', '巴西', '日本'],
     multiSelector: [['饭', '粥', '粉'], ['猪肉', '牛肉']],
   }
@@ -36,7 +36,7 @@ export default class PagePicker extends React.Component {
       return this.state.multiSelector[index][item]
     })
     this.setState({
-      mulitSelectorValues : values.join(',')
+      mulitSelectorValues: e.detail.value
     })
   }
 
@@ -90,7 +90,9 @@ export default class PagePicker extends React.Component {
                   onChange={this.handleMulitChange}
                   onColumnchange={this.handleColumnchange}>
                   <View className='picker'>
-                    当前选择：{mulitSelectorValues}
+                    当前选择： {
+                      `${this.state.multiSelector[0][mulitSelectorValues[0]]}, ${this.state.multiSelector[1][mulitSelectorValues[1]]}`
+                    }
                   </View>
                 </Picker>
               </View>
