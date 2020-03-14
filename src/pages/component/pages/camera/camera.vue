@@ -11,7 +11,7 @@
             class="cammer-content"
             @stop="handleStop"
             @error="handleError"
-            :devicePosition="devicePosition"
+            :device-position="devicePosition"
           />
         </view>
       </view>

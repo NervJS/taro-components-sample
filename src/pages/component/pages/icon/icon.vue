@@ -1,7 +1,7 @@
 <template>
   <view class="components-page">
     <view class="components-page__header">
-      <Header title="icon"></Header>
+      <Header title="Icon"></Header>
     </view>
     <view class="components-page__body">
       <view class="components-page__body-example example">

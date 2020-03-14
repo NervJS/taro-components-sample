@@ -1,14 +1,14 @@
 <template>
-        <View className='container'>
-        <Header title='Canvas'></Header>
-        <View className='page-body'>
-          <View className='page-section'>
-            <View className='page-section-title'>
-              <Text>可直接使用微信小程序的Canvas组件</Text>
-            </View>
-          </View>
-        </View>
-      </View>
+  <view class='container'>
+    <Header title='Canvas'></Header>
+    <view class='page-body'>
+      <view class='page-section'>
+        <view class='page-section-title'>
+          <Text>可直接使用微信小程序的Canvas组件</Text>
+        </view>
+      </view>
+    </view>
+  </view>
 </template>
 
 <script>

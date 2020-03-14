@@ -5,7 +5,9 @@
     &__scroll-view {
       height: 100%;
       white-space: nowrap;
+      font-size: 0;
       &-item {
+        font-size: 32px;
         width: 100%;
         display: inline-block;
         height: 100%;

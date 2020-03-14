@@ -117,7 +117,7 @@ export default {
   methods: {
     kindToggle(e) {
       const id = e.currentTarget.id;
-      const list = this.list;
+      const list = this.list.slice();
       for (var i = 0, len = list.length; i < len; ++i) {
         if (list[i].id == id) {
           list[i].open = !list[i].open;

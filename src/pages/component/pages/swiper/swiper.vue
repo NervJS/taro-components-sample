@@ -12,13 +12,13 @@
           <swiper
             slide-mult="10"
             indicator-color="#999"
-            indicatorActiveColor="#333"
+            indicator-active-color="#333"
             :current="current"
             :duration="duration"
             :interval="interval"
             :circular="isCircular"
             :autoplay="isAutoplay"
-            :indicatorDots="hasIndicatorDots"
+            :indicator-dots="hasIndicatorDots"
             pre-margin="20"
           >
             <swiper-item>
@@ -38,11 +38,7 @@
             </view>
             <view class="switch-list__item">
               <view class="switch-list__text">自动播放</view>
-              <switch :checked="isAutoplay" @change="this.setAutoPlay"></switch>
-            </view>
-            <view class="switch-list__item">
-              <view class="switch-list__text">循环播放</view>
-              <switch :checked="isCircular" @change="setCircular"></switch>
+              <switch :checked="isAutoplay" @change="setAutoPlay"></switch>
             </view>
           </view>
           <view class="slider-list">
@@ -90,9 +86,9 @@
             indicator-color="#999"
             indicator-active-color="#333"
             vertical
-            circular="verticalIsCircular"
-            indicator-dots="verticalHasIndicatorDots"
-            autoplay="verticalIsAutoplay"
+            :circular="verticalIsCircular"
+            :indicator-dots="verticalHasIndicatorDots"
+            :autoplay="verticalIsAutoplay"
             pre-margin="20"
           >
             <swiper-item>
@@ -115,10 +111,6 @@
             <view class="switch-list__text">自动播放</view>
             <switch :checked="verticalIsAutoplay" @change="setVerticalAutoPlay"></switch>
           </view>
-          <view class="switch-list__item">
-            <view class="switch-list__text">循环播放</view>
-            <switch :checked="verticalIsCircular" @change="this.setVerticalCircular"></switch>
-          </view>
         </view>
       </view>
     </view>
@@ -138,7 +130,7 @@ export default {
       current: 1,
       duration: 500,
       interval: 5000,
-      isCircular: false,
+      isCircular: true,
       verticalIsCircular: false,
       isAutoplay: false,
       verticalIsAutoplay: false,
@@ -163,19 +155,19 @@ export default {
       this.verticalIsCircular = e.detail.value
     },
 
-    setIndicatorDots () {
+    setIndicatorDots (e) {
       this.hasIndicatorDots = e.detail.value
     },
 
-    setVerticalIndicatorDots () {
+    setVerticalIndicatorDots (e) {
       this.verticalHasIndicatorDots = e.detail.value
     },
 
-    setInterval () {
+    setInterval (e) {
       this.interval = e.detail.value
     },
 
-    setDuration () {
+    setDuration (e) {
       this.duration = e.detail.value
     }
   }
