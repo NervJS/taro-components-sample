@@ -63,6 +63,7 @@ export default {
 
     input(e) {
       console.log(e);
+      this.value = e.detail.value
     }
   }
 };

@@ -23,7 +23,7 @@
             @change="handleMulitChange"
             @columnchange="handleColumnchange"
           >
-            <view class="picker">当前选择：{{mulitSelectorValues}}</view>
+            <view class="picker">当前选择：{{multiSelector[0][mulitSelectorValues[0]]}}, {{multiSelector[1][mulitSelectorValues[1]]}}</view>
           </picker>
         </view>
       </view>
@@ -64,7 +64,7 @@ export default {
       timeSel: "12:01",
       dateSel: "2018-04-22",
       selectorValue: 1,
-      mulitSelectorValues: [],
+      mulitSelectorValues: [0, 0],
       selector: ["美国", "中国", "巴西", "日本"],
       multiSelector: [
         ["饭", "粥", "粉"],
@@ -78,10 +78,7 @@ export default {
     },
 
     handleMulitChange(e) {
-      const values = e.detail.value.map((item, index) => {
-        return this.multiSelector[index][item];
-      });
-      this.mulitSelectorValues = values.join(",");
+      this.mulitSelectorValues = e.detail.value
     },
 
     handleColumnchange(e) {

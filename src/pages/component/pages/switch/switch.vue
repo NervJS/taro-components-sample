@@ -41,7 +41,8 @@
 </template>
 
 <script>
-import Header from "../../../../components/head/head.vue";
+import Header from "../../../../components/head/head.vue"
+import './switch.scss'
 
 export default {
   components: {

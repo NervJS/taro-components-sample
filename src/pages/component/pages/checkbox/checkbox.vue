@@ -26,7 +26,6 @@
                   v-for="(item, index) in list"
                   :key="index"
                   class="checkbox-list__label"
-                  :for="item.value"
                 >
                   <checkbox
                     class="checkbox-list__checkbox"

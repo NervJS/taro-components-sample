@@ -1,7 +1,7 @@
 <template>
   <view class="components-page">
     <view class="components-page__header">
-      <Header title="slider"></Header>
+      <Header title="Slider"></Header>
     </view>
     <view class="components-page__body">
       <view class="components-page__body-example example">
@@ -18,7 +18,7 @@
           <text>显示当前的value</text>
         </view>
         <view class="example-body">
-          <slider step="1" value="50" showValue></slider>
+          <slider step="1" value="50" show-value></slider>
         </view>
       </view>
 
@@ -52,7 +52,7 @@
           <text>数据绑定</text>
         </view>
         <view class="example-body">
-          <button @tap="{setValue}">Set Value</button>
+          <button @tap="setValue">Set Value</button>
           <slider
             step="1"
             :value="value"

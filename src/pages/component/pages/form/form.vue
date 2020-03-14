@@ -1,7 +1,7 @@
 <template>
   <view class="components-page">
     <view class="components-page__header">
-      <Header title="form"></Header>
+      <Header title="Form"></Header>
     </view>
     <form @submit="formSubmit" @reset="formReset">
       <view class="components-page__body">
@@ -82,8 +82,8 @@
         </view>
         <view class="components-page__body-example example">
           <view class="example-body">
-            <button formType="submit" type="primary">Submit</button>
-            <button formType="reset" type="default">Reset</button>
+            <button form-type="submit" type="primary">Submit</button>
+            <button form-type="reset" type="default">Reset</button>
           </view>
         </view>
       </view>
