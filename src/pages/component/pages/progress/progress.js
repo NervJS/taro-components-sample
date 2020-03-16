@@ -75,7 +75,6 @@ export default class PageView extends React.Component {
           <View className='components-page__body-example example'>
             <View className='example-progress'>
               <Progress
-                active
                 showInfo
                 strokeWidth={2}
                 percent={progress}
