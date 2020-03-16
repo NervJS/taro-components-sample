@@ -1,7 +1,7 @@
 <template>
   <view class="index">
     <view class="index-hd">
-      <image class="index-logo" src="../../asset/component/logo.png" />
+      <image class="index-logo" :src="logo" />
       <view class="index-desc">
         <text class="index-desc_text">以下将展示Taro官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式。</text>
       </view>
@@ -36,6 +36,7 @@
 
 <script>
 import Taro from "@tarojs/taro";
+import logo from '../../asset/component/logo.png'
 import viewPng from "../../asset/component/view.png";
 import contentPng from "../../asset/component/content.png";
 import formPng from "../../asset/component/form.png";
@@ -111,7 +112,8 @@ export default {
           name: "画布",
           pages: ["canvas"]
         }
-      ]
+      ],
+      logo
     };
   },
   methods: {
