@@ -20,7 +20,7 @@
       </view>
       <view class="components-page__body-example example">
         <view class="example-progress">
-          <progress active show-info stroke-width="2" :percent="progress" active-color="#3C7FE8"></progress>
+          <progress show-info stroke-width="2" :percent="progress" active-color="#3C7FE8"></progress>
         </view>
         <view>
           <button @tap="handleStart">加载</button>
