@@ -4,7 +4,7 @@
       <Header title="scroll-view"></Header>
     </view>
     <view class="components-page__body">
-      <view class="components-page__body-example example">
+      <view class="components-page__body-example example scroll-view">
         <view class="example-header">
           <text>Horizontal 横向滚动</text>
         </view>
@@ -16,7 +16,7 @@
           </scroll-view>
         </view>
       </view>
-      <view class="components-page__body-example example">
+      <view class="components-page__body-example example scroll-view">
         <view class="example-header">
           <text>Vertical 纵向滚动</text>
         </view>

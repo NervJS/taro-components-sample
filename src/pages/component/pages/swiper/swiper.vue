@@ -3,7 +3,7 @@
     <view class="components-page__header">
       <Header title="swiper"></Header>
     </view>
-    <view class="components-page__body">
+    <view class="components-page__body swiper">
       <view class="components-page__body-example example">
         <view class="example-header">
           <text>swiper 横向滑动</text>
