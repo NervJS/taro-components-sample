@@ -1,5 +1,7 @@
 .components-page__body {
-  padding: 0;
+  &.swiper {
+    padding: 0;
+  }
   .switch-list {
     position: relative;
     padding: 0 15px;

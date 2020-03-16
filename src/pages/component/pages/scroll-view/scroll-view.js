@@ -21,7 +21,7 @@ export default class PageView extends React.Component {
           <Header title='ScrollView'></Header>
         </View>
         <View className='components-page__body'>
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example example scroll-view'>
             <View className='example-header'>
               <Text> Horizontal 横向滚动</Text>
             </View>
@@ -35,7 +35,7 @@ export default class PageView extends React.Component {
               </ScrollView>
             </View>
           </View>
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example example scroll-view'>
             <View className='example-header'>
               <Text>Vertical 纵向滚动</Text>
             </View>
