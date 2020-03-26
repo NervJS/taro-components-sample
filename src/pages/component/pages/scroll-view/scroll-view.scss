@@ -1,22 +1,18 @@
 /*postcss-pxtransform rn eject enable*/
 .scroll-view {
-  .example-body {
-    height: 300px;
-    &__scroll-view {
-      height: 100%;
+  .example-body__scroll-view {
+    &--H {
       white-space: nowrap;
-      &-item {
-        width: 100%;
+      .example-body__scroll-view-item {
         display: inline-block;
-        height: 100%;
+        width: 100%;
       }
     }
-    &--vertical {
-      .example-body__scroll-view {
-        &-item {
-          display: block;
-        }
-      }
+    &--V {
+      height: 300px;
+    }
+    .example-body__scroll-view-item {
+      height: 300px;
     }
   }
 }
