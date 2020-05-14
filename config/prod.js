@@ -4,7 +4,7 @@ module.exports = {
   },
   defineConstants: {
   },
-  weapp: {},
+  mini: {},
   h5: {
     publicPath: './',
     path: './taro'
