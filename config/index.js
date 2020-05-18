@@ -41,11 +41,12 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
-    module: {
-      postcss: {
-        autoprefixer: {
-          enable: true
-        }
+    sassLoaderOption: {
+      importer: sassImporter
+    },
+    postcss: {
+      autoprefixer: {
+        enable: true
       }
     }
   }
