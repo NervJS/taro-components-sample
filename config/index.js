@@ -20,27 +20,13 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   framework: 'react',
-  plugins: {
-    babel: {
-      sourceMap: true,
-      presets: [
-        'env'
-      ],
-      plugins: [
-        'transform-class-properties',
-        'transform-decorators-legacy',
-        'transform-object-rest-spread'
-      ]
-    },
-    sass: {
-      importer: sassImporter
-    }
+  sass: {
+    importer: sassImporter
   },
   defineConstants: {
     WWW: JSON.stringify('www')
   },
-  weapp: {
-
+  mini: {
   },
   h5: {
     publicPath: '/',
