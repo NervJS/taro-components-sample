@@ -86,7 +86,7 @@ export default class PageRadio extends React.Component {
                 <RadioGroup onChange={this.radioChange}>
                   {this.state.list.map((item, i) => {
                     return (
-                      <Label className='example-body__radios-item' for={i} key={i}>
+                      <Label className='example-body__radios-item' key={i}>
                         <Radio
                           name='radio'
                           value={item.value}
