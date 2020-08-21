@@ -5,15 +5,6 @@ import { View, Text, Switch } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageSwitch extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Switch组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
-
   state = {
     isChecked: true
   }

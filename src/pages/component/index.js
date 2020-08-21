@@ -23,10 +23,6 @@ const PNGS = {
 }
 
 export default class Index extends React.Component {
-  config = {
-    navigationBarTitleText: 'Taro基础组件展示'
-  }
-
   constructor () {
     super(...arguments)
     this.state = {

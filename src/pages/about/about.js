@@ -3,14 +3,6 @@ import './about.scss'
 import React from 'react'
 import { View, Text } from '@tarojs/components'
 export default class About extends React.Component {
-  config = {
-    navigationBarTitleText: '关于'
-  }
-
-  constructor () {
-    super(...arguments)
-  }
-
   componentDidMount () {
     console.log('about mount')
   }

@@ -4,11 +4,6 @@ import React from 'react'
 import { View, PickerView, PickerViewColumn } from '@tarojs/components'
 
 export default class Picks extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'PickerView组件'
-  }
-
   constructor() {
     super(...arguments)
     const date = new Date()

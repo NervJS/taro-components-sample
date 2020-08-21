@@ -7,11 +7,6 @@ import { Camera, Button, View } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Camera组件'
-  }
-
   constructor() {
     super(...arguments)
     this.state = {

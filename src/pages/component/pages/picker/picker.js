@@ -7,15 +7,6 @@ import { View, Text, Picker } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PagePicker extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Picker组件'
-  }
-
-  constructor () {
-    super(...arguments)
-  }
-
   state = {
     timeSel: '12:01',
     dateSel: '2018-04-22',

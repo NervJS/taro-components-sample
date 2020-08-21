@@ -5,15 +5,6 @@ import { View, Audio } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Audio组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
-
   render() {
     return (
       <View className='components-page'>

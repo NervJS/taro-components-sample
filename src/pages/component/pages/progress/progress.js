@@ -5,11 +5,6 @@ import { View, Progress, Button } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Progress组件'
-  }
-
   constructor() {
     super(...arguments)
     this._timmer = null

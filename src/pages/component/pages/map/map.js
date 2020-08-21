@@ -7,15 +7,6 @@ import { View, Text } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Map组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
-
   render() {
     return (
       <View className='container'>

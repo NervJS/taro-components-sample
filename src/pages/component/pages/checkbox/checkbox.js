@@ -6,15 +6,6 @@ import { View, Text, Checkbox, Label, CheckboxGroup } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageCheckbox extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Checkbox组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
-
   state = {
     selectValues: ['中国', '法国'],
     list: [

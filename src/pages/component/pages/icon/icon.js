@@ -5,14 +5,6 @@ import React from 'react'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Icon组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
   render() {
     return (
       <View className='components-page'>

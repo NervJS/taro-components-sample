@@ -4,10 +4,6 @@ import { View, Text, Input, Button, Image } from '@tarojs/components'
 import './hello.scss'
 
 export default class Hello extends Component {
-  config = {
-    navigationBarTitleText: 'hello'
-  }
-  
   componentDidMount () {
     console.log('hello mount')
   }

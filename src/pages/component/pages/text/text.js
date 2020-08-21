@@ -5,11 +5,6 @@ import { View, Text } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageView extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Text组件'
-  }
-
   constructor() {
     super(...arguments)
 

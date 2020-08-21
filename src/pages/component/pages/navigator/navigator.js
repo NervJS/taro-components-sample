@@ -8,15 +8,6 @@ import { View, Navigator, Text } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageSwitch extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Navigator组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
-
   state = {}
 
   render() {

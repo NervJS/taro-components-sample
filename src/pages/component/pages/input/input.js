@@ -6,14 +6,6 @@ import Header from '../../../../components/head/head'
 import './input.scss'
 
 export default class PageInput extends React.Component {
-  config = {
-    navigationBarTitleText: 'Input组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
-
   state = {
     value: ''
   }

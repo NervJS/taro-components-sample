@@ -14,11 +14,6 @@ import {
 import Header from '../../../../components/head/head'
 
 export default class PageView extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Swiper组件'
-  }
-
   constructor() {
     super(...arguments)
     this.state = {

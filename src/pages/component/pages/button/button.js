@@ -5,15 +5,6 @@ import { View, Button } from '@tarojs/components'
 import Header from '../../../../components/head/head'
 
 export default class PageButton extends React.Component {
-
-  config = {
-    navigationBarTitleText: 'Button组件'
-  }
-
-  constructor() {
-    super(...arguments)
-  }
-
   state = {
     btn: [
       {
