@@ -6,7 +6,7 @@
     <view class="components-page__body swiper">
       <view class="components-page__body-example example">
         <view class="example-header">
-          <text>swiper 横向滑动</text>
+          <text>swiper 横向滑动{{interval}}</text>
         </view>
         <view class="example-body">
           <swiper
@@ -48,7 +48,7 @@
               </view>
               <view class="slider-list__item-body">
                 <slider
-                  show-value
+                  show-value="true"
                   step="1"
                   min="500"
                   max="2000"
@@ -63,7 +63,7 @@
               </view>
               <view class="slider-list__item-body">
                 <slider
-                  show-value
+                  show-value="true"
                   step="1"
                   min="2000"
                   max="10000"

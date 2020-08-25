@@ -12,14 +12,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@tarojs/async-await": "1.2.12",
-    "@tarojs/components": "^3.0.7",
-    "@tarojs/mini-runner": "^3.0.7",
-    "@tarojs/react": "^3.0.7",
-    "@tarojs/runtime": "^3.0.7",
-    "@tarojs/taro": "^3.0.7",
-    "@tarojs/webpack-runner": "^3.0.7",
-    "babel-preset-taro": "^3.0.7",
+    "@tarojs/components": "^3.0.8",
+    "@tarojs/react": "^3.0.8",
+    "@tarojs/runtime": "^3.0.8",
+    "@tarojs/taro": "^3.0.8",
     "nervjs": "^1.5.6",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -32,24 +28,22 @@
     "vue-template-compiler": "^2.6.11"
   },
   "devDependencies": {
-    "@tarojs/plugin-babel": "1.2.12",
-    "@tarojs/plugin-csso": "1.2.12",
-    "@tarojs/plugin-sass": "^1.2.21",
-    "@tarojs/plugin-uglifyjs": "1.2.12",
+    "@tarojs/mini-runner": "^3.0.8",
+    "@tarojs/webpack-runner": "^3.0.8",
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-taro": "^3.0.8",
     "eslint": "^4.19.1",
     "eslint-config-standard-jsx": "^5.0.0",
-    "eslint-config-taro": "1.2.12",
+    "eslint-config-taro": "^3.0.8",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.9.1",
-    "eslint-plugin-standard": "^3.1.0",
-    "eslint-plugin-taro": "1.2.12"
+    "eslint-plugin-standard": "^3.1.0"
   }
 }

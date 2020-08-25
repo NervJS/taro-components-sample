@@ -9,7 +9,7 @@
           <text>Horizontal 横向滚动</text>
         </view>
         <view class="example-body">
-          <scroll-view scroll-x class="example-body__scroll-view">
+          <scroll-view scroll-x="true" class="example-body__scroll-view">
             <view class="example-body__scroll-view-item demo-text-1"></view>
             <view class="example-body__scroll-view-item demo-text-2"></view>
             <view class="example-body__scroll-view-item demo-text-3"></view>
@@ -21,7 +21,7 @@
           <text>Vertical 纵向滚动</text>
         </view>
         <view class="example-body example-body--vertical">
-          <scroll-view scroll-y scroll-with-animation class="example-body__scroll-view">
+          <scroll-view scroll-y="true" scroll-with-animation class="example-body__scroll-view">
             <view class="example-body__scroll-view-item demo-text-1"></view>
             <view class="example-body__scroll-view-item demo-text-2"></view>
             <view class="example-body__scroll-view-item demo-text-3"></view>

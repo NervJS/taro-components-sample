@@ -9,7 +9,7 @@
           <text>设置step</text>
         </view>
         <view class="example-body">
-          <slider step="1" value="50"></slider>
+          <slider step="5" value="50"></slider>
         </view>
       </view>
 
@@ -18,7 +18,7 @@
           <text>显示当前的value</text>
         </view>
         <view class="example-body">
-          <slider step="1" value="50" show-value></slider>
+          <slider step="1" value="50" show-value="true"></slider>
         </view>
       </view>
 
@@ -27,7 +27,7 @@
           <text>设置最小/最大值</text>
         </view>
         <view class="example-body">
-          <slider step="1" value="100" show-value min="50" max="200"></slider>
+          <slider step="1" value="100" show-value="true" min="50" max="200"></slider>
         </view>
       </view>
 
@@ -58,7 +58,7 @@
             :value="value"
             @change="handleChange"
             @changing="handleChaning"
-            show-value
+            show-value="true"
             min="50"
             max="200"
           ></slider>
