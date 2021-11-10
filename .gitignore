@@ -5,3 +5,4 @@ node_modules
 /.idea/workspace.xml
 yarn-error.log
 .rn_temp
+harmony.json

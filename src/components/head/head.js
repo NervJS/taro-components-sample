@@ -1,5 +1,7 @@
 import React from 'react'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
+
+import './head.scss'
 
 export default class Header extends React.Component {
   static options = {
@@ -9,10 +11,10 @@ export default class Header extends React.Component {
   render () {
     return (
       <View className="page-head">
-        <View className="page-head-title">{this.props.title}</View>
+        <Text className="page-head-title">{this.props.title}</Text>
         <View className="page-head-line" />
         {!!this.props.desc ?
-          (<View className="page-head-desc">{this.props.desc}</View>)
+          (<Text className="page-head-desc">{this.props.desc}</Text>)
           : null}
       </View>
     )

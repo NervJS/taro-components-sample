@@ -57,3 +57,16 @@ $ taro build --type h5
 # npx用户也可以使用
 $ npx taro build --type h5
 ```
+
+## Harmony
+
+### config.json
+
+配置：
+
+`window.autoDesignWidth: false`
+
+### 注意
+
+- 由于 ACE 框架对模板的解析问题，目前 className 只能设置一个类名
+- 注意目前没有样式隔离，需要使用 BEM 格式的类名以避免冲突

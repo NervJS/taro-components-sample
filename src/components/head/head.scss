@@ -1,0 +1,27 @@
+.page-head {
+  flex: 1;
+  flex-direction: column;
+  padding: 60px 50px 80px;
+  align-items: center;
+}
+
+.page-head-title {
+  //display: inline-block;
+  padding: 0 40px 20px 40px;
+  font-size: 32px;
+  color: #bebebe;
+}
+
+.page-head-line {
+  // margin: 0 auto;
+  margin: 0;
+  width: 150px;
+  height: 2px;
+  background-color: #d8d8d8;
+}
+
+.page-head-desc {
+  padding-top: 20px;
+  color: #9b9b9b;
+  font-size: 32px;
+}

@@ -1,12 +1,20 @@
-@import '../../styles//mixins.scss';
+@import '../../styles/mixins.scss';
+
+.index {
+  flex-direction: column;
+  overflow: scroll;
+  height: 100%;
+}
 
 .index-hd {
+  flex-direction: column;
   padding: 80px;
   text-align: center;
   align-items: center;
 }
 
 .index-bd {
+  flex-direction: column;
   padding: 0 30px 40px;
 }
 
@@ -30,18 +38,20 @@
 }
 
 .navigator-box {
-  opacity: 0;
+  flex-direction: column;
+  // opacity: 0;
   position: relative;
   background-color: #ffffff;
-  line-height: 1.41176471;
+  // line-height: 1.41176471;
   font-size: 28px;
-  @include eject(transform, translateY(-50%));
-  @include eject(transition, 0.3s);
+  // @include eject(transform, translateY(-50%));
+  // @include eject(transition, 0.3s);
 }
 
 .navigator-box-show {
-  opacity: 1;
-  transform: translateY(0);
+  @extend .navigator-box;
+  // opacity: 1;
+  // transform: translateY(0);
 }
 
 .navigator {
@@ -49,18 +59,19 @@
   position: relative;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #d8d8d8;
 }
 
-.navigator:before {
-  content: ' ';
-  position: absolute;
-  left: 30px;
-  top: 0;
-  right: 30px;
-  height: 1px;
-  border-top: 1px solid #d8d8d8;
-  color: #d8d8d8;
-}
+// .navigator:before {
+//   content: ' ';
+//   position: absolute;
+//   left: 30px;
+//   top: 0;
+//   right: 30px;
+//   height: 1px;
+//   border-top: 1px solid #d8d8d8;
+//   color: #d8d8d8;
+// }
 
 .navigator:first-child:before {
   display: none;
@@ -71,13 +82,12 @@
 }
 
 .navigator-arrow {
-  padding-right: 26px;
+  // padding-right: 26px;
   position: relative;
 }
 
-.navigator-arrow:after {
-  content: ' ';
-  display: inline-block;
+.navigator-arrow-icon {
+  // display: inline-block;
   height: 18px;
   width: 18px;
   border-width: 2px 2px 0 0;
@@ -86,19 +96,21 @@
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   position: absolute;
   top: 50%;
-  margin-top: -8px;
+  margin-top: -24px;
   right: 28px;
 }
 
 .kind-list {
+  flex-direction: column;
   font-size: 32px;
 }
 
 .kind-list-item {
+  flex-direction: column;
   margin: 20px 0;
   background-color: #ffffff;
   border-radius: 4px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .kind-list-item:first-child {
@@ -119,19 +131,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  @include eject(transition, opacity 0.3s);
+  opacity: 1;
 }
 
 .kind-list-item-hd-show {
+  @extend .kind-list-item-hd;
   opacity: 0.2;
 }
 
 .kind-list-item-bd {
-  height: 0;
-  overflow: hidden;
+  display: none;
+  // height: 0;
+  // overflow: hidden;
 }
 
 .kind-list-item-bd-show {
-  height: auto;
+  display: flex;
+  // height: auto;
 }

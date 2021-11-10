@@ -1,4 +1,5 @@
 const path = require('path')
+const { projectPath } = require('../harmony.json')
 
 // NOTE 在 sass 中通过别名（@ 或 ~）引用需要指定路径
 const sassImporter = function(url) {
@@ -18,7 +19,7 @@ const config = {
   projectName: 'taro-components-sample',
   designWidth: 750,
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: projectPath,
   framework: 'react',
   sass: {
     importer: sassImporter
@@ -26,7 +27,11 @@ const config = {
   defineConstants: {
     WWW: JSON.stringify('www')
   },
+  plugins: [
+    '@tarojs/plugin-platform-harmony'
+  ],
   mini: {
+    debugReact: true
   },
   h5: {
     publicPath: '/',

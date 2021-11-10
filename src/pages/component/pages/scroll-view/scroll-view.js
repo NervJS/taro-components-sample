@@ -12,35 +12,35 @@ export default class PageView extends React.Component {
           <Header title='ScrollView'></Header>
         </View>
         <View className='components-page__body'>
-          <View className='components-page__body-example example scroll-view'>
+          <View className='example'>
             <View className='example-header'>
               <Text> Horizontal 横向滚动</Text>
             </View>
-            <View className='example-body'>
+            <View className='scroll-view-example'>
               <ScrollView
                 scrollX
-                className='example-body__scroll-view example-body__scroll-view--H'
+                className='scroll-view-example__H'
               >
-                <View className='example-body__scroll-view-item demo-text-1'></View>
-                <View className='example-body__scroll-view-item demo-text-2'></View>
-                <View className='example-body__scroll-view-item demo-text-3'></View>
+                <View className='scroll-view-example__item-1'><Text>A</Text></View>
+                <View className='scroll-view-example__item-2'><Text>B</Text></View>
+                <View className='scroll-view-example__item-3'><Text>C</Text></View>
               </ScrollView>
             </View>
           </View>
 
-          <View className='components-page__body-example example scroll-view'>
+          <View className='example'>
             <View className='example-header'>
               <Text>Vertical 纵向滚动</Text>
             </View>
-            <View className='example-body'>
+            <View className='scroll-view-example'>
               <ScrollView
                 scrollY
                 scrollWithAnimation
-                className='example-body__scroll-view example-body__scroll-view--V'
+                className='scroll-view-example__V'
               >
-                <View className='example-body__scroll-view-item demo-text-1'></View>
-                <View className='example-body__scroll-view-item demo-text-2'></View>
-                <View className='example-body__scroll-view-item demo-text-3'></View>
+                <View className='scroll-view-example__item-1'><Text>A</Text></View>
+                <View className='scroll-view-example__item-2'><Text>B</Text></View>
+                <View className='scroll-view-example__item-3'><Text>C</Text></View>
               </ScrollView>
             </View>
           </View>
