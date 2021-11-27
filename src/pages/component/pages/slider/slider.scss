@@ -1,0 +1,15 @@
+.components-page__body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.components-page__body-example{
+  display: flex;
+  flex-direction: column;
+}
+.example-body{}
+.example-body__column{
+  @extend .example-body;
+  display: flex;
+  flex-direction: column;
+}

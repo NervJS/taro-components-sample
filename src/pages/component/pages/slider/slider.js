@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Button, Text, Slider } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
+import './slider.scss'
 
 export default class PageSlider extends React.Component {
   state = {
@@ -9,15 +10,15 @@ export default class PageSlider extends React.Component {
   }
 
   setValue = () => {
-    const value = Math.floor(Math.random() * 100)
+    const value = Math.floor(Math.random() * 150) + 50
     console.log(value)
     this.setState({
       value
     })
   }
 
-  handleChaning = e => {
-
+  handleChanging = e => {
+    console.log('[slider] e.detail:'+JSON.stringify(e.detail))
   }
 
   handleChange = e => {
@@ -32,7 +33,7 @@ export default class PageSlider extends React.Component {
         </View>
         <View className='components-page__body'>
 
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example'>
             <View className='example-header'>
               <Text>设置step</Text>
             </View>
@@ -41,7 +42,7 @@ export default class PageSlider extends React.Component {
             </View>
           </View>
 
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example'>
             <View className='example-header'>
               <Text>显示当前的value</Text>
             </View>
@@ -50,7 +51,7 @@ export default class PageSlider extends React.Component {
             </View>
           </View>
 
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example'>
             <View className='example-header'>
               <Text>设置最小/最大值</Text>
             </View>
@@ -59,7 +60,7 @@ export default class PageSlider extends React.Component {
             </View>
           </View>
 
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example'>
             <View className='example-header'>
               <Text>UI设置</Text>
             </View>
@@ -68,13 +69,13 @@ export default class PageSlider extends React.Component {
             </View>
           </View>
 
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example'>
             <View className='example-header'>
               <Text>数据绑定</Text>
             </View>
-            <View className='example-body'>
+            <View className='example-body__column'>
               <Button onClick={this.setValue}>Set Value</Button>
-              <Slider step={1} value={this.state.value} onChange={this.handleChange} onChanging={this.handleChaning} showValue min={50} max={200}></Slider>
+              <Slider step={1} value={this.state.value} onChange={this.handleChange} onChanging={this.handleChanging} showValue min={50} max={200}></Slider>
             </View>
           </View>
         </View>
