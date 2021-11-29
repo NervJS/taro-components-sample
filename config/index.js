@@ -19,7 +19,7 @@ const config = {
   projectName: 'taro-components-sample',
   designWidth: 750,
   sourceRoot: 'src',
-  outputRoot: projectPath,
+  outputRoot: 'dist',
   framework: 'react',
   sass: {
     importer: sassImporter
@@ -43,6 +43,9 @@ const config = {
         }
       }
     }
+  },
+  harmony: {
+    projectPath
   }
 }
 

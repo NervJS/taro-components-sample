@@ -60,9 +60,19 @@ $ npx taro build --type h5
 
 ## Harmony
 
+### 编译配置
+
+根目录创建 `harmony.json` 文件，写入 Harmony 项目的路径。如：
+
+```json
+{
+  "projectPath": "/Users/whomi/Downloads/MyApplication"
+}
+```
+
 ### config.json
 
-配置：
+配置 Harmony 项目的 `config.json`：
 
 `window.autoDesignWidth: false`
 
