@@ -1,8 +1,9 @@
-import './scroll-view.scss'
 import React from 'react'
 import { View, Text, ScrollView, Button } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
+
+import './index.scss'
 
 export default class PageView extends React.Component {
   render() {

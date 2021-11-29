@@ -1,6 +1,7 @@
-import "./progress.scss";
 import React from "react";
 import { View, Progress, Button, Text } from "@tarojs/components";
+
+import "./index.scss";
 
 import Header from "../../../../components/head/head";
 

@@ -121,7 +121,7 @@ export default class Index extends Component {
                 item._pages = item.pages.map(page => {
                   return {
                     page: page,
-                    url: `/pages/component/pages/${page}/${page}`
+                    url: `/pages/component/pages/${page}/index`
                   }
                 })
                 return item

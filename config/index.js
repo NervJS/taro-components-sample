@@ -31,7 +31,8 @@ const config = {
     '@tarojs/plugin-platform-harmony'
   ],
   mini: {
-    debugReact: true
+    debugReact: true,
+    enableSourceMap: false
   },
   h5: {
     publicPath: '/',

@@ -2,7 +2,8 @@ import React from 'react'
 import { View, Button, Text, Slider } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
-import './slider.scss'
+
+import './index.scss'
 
 export default class PageSlider extends React.Component {
   state = {
