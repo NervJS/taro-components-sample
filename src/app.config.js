@@ -8,7 +8,7 @@ export default {
     // 'pages/component/pages/image/image',
     // 'pages/component/pages/audio/audio',
     // 'pages/component/pages/video/video',
-    // 'pages/component/pages/swiper/swiper',
+    'pages/component/pages/swiper/index',
     // 'pages/component/pages/form/form',
     // 'pages/component/pages/input/input',
     // 'pages/component/pages/checkbox/checkbox',
