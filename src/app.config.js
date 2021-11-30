@@ -14,7 +14,7 @@ export default {
     // 'pages/component/pages/checkbox/checkbox',
     // 'pages/component/pages/radio/radio',
     // 'pages/component/pages/button/button',
-    // 'pages/component/pages/text/text',
+    'pages/component/pages/text/index',
     // 'pages/component/pages/label/label',
     // 'pages/component/pages/picker/picker',
     // 'pages/component/pages/picker-view/picker-view',
