@@ -80,8 +80,7 @@ export default class PageSlider extends React.Component {
             </View>
           </View>
         </View>
-
-      </View >
+      </View>
     )
   }
 }
