@@ -1,6 +1,5 @@
 import './radio.scss'
 import React from 'react'
-import { Component } from '@tarojs/taro'
 import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
@@ -66,12 +65,15 @@ export default class PageRadio extends React.Component {
               <Text>默认样式</Text>
             </View>
             <View className='example-body'>
-              <Radio value='选中' checked>
-                选中
-              </Radio>
-              <Radio style='margin-left: 30px' value='未选中'>
-                未选中
-              </Radio>
+              <Label>
+                <Radio value='选中' checked id='0' group-id='group1' />
+                <Text className='example-title'>选中</Text>
+              </Label>
+
+              <Label>
+                <Radio style='margin-left: 20rpx' value='未选中' id='1' group-id='group1' />
+                <Text className='example-title'>未选中</Text>
+              </Label>
             </View>
           </View>
           <View className='components-page__body-example example'>
@@ -83,16 +85,12 @@ export default class PageRadio extends React.Component {
                 选中的值是: {this.state.selectValue}
               </View>
               <View className='example-body__radios'>
-                <RadioGroup onChange={this.radioChange}>
+                <RadioGroup id='radio-group' className='radio-vertical' onChange={this.bindChange}>
                   {this.state.list.map((item, i) => {
                     return (
-                      <Label className='example-body__radios-item' key={i}>
-                        <Radio
-                          name='radio'
-                          value={item.value}
-                          checked={item.checked}>
-                          {item.text}
-                        </Radio>
+                      <Label for={i} key={i}>
+                        <Radio id={i} value={item.value} checked={item.checked} group-id='radio-group' />
+                        <Text className='example-title'>{item.text}</Text>
                       </Label>
                     )
                   })}
