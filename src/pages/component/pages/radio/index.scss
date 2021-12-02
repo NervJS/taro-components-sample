@@ -1,62 +1,58 @@
-.components-page_body {
+.example-body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
 
-  .example-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
-
-    &-label {
-      background-color: #000000;
-      margin-right: 40px;
-    }
-
-    &-group {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    &__select-box {
-      display: flex;
-      justify-content: center;
-      color: #333333;
-      width: 100%;
-      height: 40px;
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
-
-    &__radios-box {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    &__radios {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      padding: 0px 7px;
-      background-color: #FFFFFF;
-      border-top: 1px solid #e5e5e5;
-      border-bottom: 1px solid #e5e5e5;
-      margin-bottom: 30px;
-
-      &-label {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid #ccc;
-      }
-
-      &-label__active {
-        border-bottom: none;
-      }
-    }
+  &-label {
+    background-color: #000000;
+    margin-right: 40px;
   }
 
-  .example-title {
+  &-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__select-box {
+    display: flex;
+    justify-content: center;
+    color: #333333;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
     font-size: 24px;
   }
+
+  &__radios-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__radios {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 7px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+
+    &-label {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #ccc;
+    }
+
+    &-label__active {
+      border-bottom: none;
+    }
+  }
 }
+
+.example-title {
+  font-size: 24px;
+}
+
