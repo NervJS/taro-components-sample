@@ -34,7 +34,7 @@ export default class PageView extends React.Component {
         <View className='components-page__header'>
           <Header title='Camera'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='components-page__body-example example'>
             <View className='example-body'>
               <Button type='primary' onClick={this.toggleDevice}>开启{this.state.devicePosition == 'back' ? '前置' : '后置'}镜头</Button>

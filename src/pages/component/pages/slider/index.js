@@ -32,7 +32,7 @@ export default class PageSlider extends React.Component {
         <View className='components-page__header'>
           <Header title='Slider'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
 
           <View className='components-page__body-example'>
             <View className='example-header'>

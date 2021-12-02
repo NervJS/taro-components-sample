@@ -12,7 +12,7 @@ export default class PageView extends React.Component {
         <View className='components-page__header'>
           <Header title='ScrollView'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='example'>
             <View className='example-header'>
               <Text> Horizontal 横向滚动</Text>

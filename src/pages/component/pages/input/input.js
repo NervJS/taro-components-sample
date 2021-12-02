@@ -22,7 +22,7 @@ export default class PageInput extends React.Component {
         <View className='components-page__header'>
           <Header title='Input'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
               <Text>可以自动聚焦的input</Text>

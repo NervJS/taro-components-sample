@@ -12,7 +12,7 @@ export default class PageView extends React.Component {
         <View className='components-page__header'>
           <Header title='View'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='example'>
             <View className='example-header'>
               <Text>flex-direction: row 横向布局</Text>

@@ -82,7 +82,7 @@ export default class PageForm extends React.Component {
           <Header title='Form'></Header>
         </View>
         <Form onSubmit={this.formSubmit} onReset={this.formReset}>
-          <View className='components-page__body'>
+          <View className='components-page_body'>
             <View className='components-page__body-example example'>
               <View className='example-header'>
                 <Text>switch</Text>

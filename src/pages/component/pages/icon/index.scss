@@ -11,15 +11,21 @@
 }
 
 .icon_right {
+  flex: 1;
+  flex-direction: column;
   margin-left: 20px;
   &_head {
     color: #333;
-    font-size: 32px;
     margin-bottom: 10px;
+    text {
+      font-size: 32px;
+    }
   }
 
   &_tit {
     color: #999;
-    font-size: 26px;
+    text {
+      font-size: 26px;
+    }
   }
 }

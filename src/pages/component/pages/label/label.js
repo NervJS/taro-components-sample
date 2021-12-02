@@ -33,7 +33,7 @@ export default class PageLabel extends React.Component {
         <View className='components-page__header'>
           <Header title='Label'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
               <Text>表单组件在label内</Text>

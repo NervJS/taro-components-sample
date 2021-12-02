@@ -19,7 +19,7 @@ export default class PageView extends React.Component {
         <View className='components-page__header'>
           <Header title='Text'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='example'>
             <View className='example-header'>
               <Text>H5、小程序通用</Text>

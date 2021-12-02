@@ -14,7 +14,7 @@ export default class PageView extends React.Component {
         <View className='components-page__header'>
           <Header title='Image'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
               <Text>Local Image</Text>

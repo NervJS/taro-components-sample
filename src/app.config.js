@@ -3,7 +3,7 @@ export default {
     'pages/component/index',
     'pages/component/pages/view/index',
     'pages/component/pages/scroll-view/index',
-    // 'pages/component/pages/icon/icon',
+    'pages/component/pages/icon/index',
     'pages/component/pages/progress/index',
     // 'pages/component/pages/image/image',
     // 'pages/component/pages/audio/audio',

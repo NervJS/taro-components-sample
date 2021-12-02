@@ -54,7 +54,7 @@ export default class PageButton extends React.Component {
         <View className='components-page__header'>
           <Header title='Button'></Header>
         </View>
-        <View className='components-page__body'>
+        <View className='components-page_body'>
           <View className='components-page__body-example example'>
             <View className='example-body'>
               {this.state.btn.map(item => {
