@@ -59,11 +59,11 @@ export default class PageCheckbox extends React.Component {
           <Header title='Checkbox'></Header>
         </View>
         <View className='components-page_body'>
-          <View className='components-page__body-example example'>
+          <View className='example'>
             <View className='example-header'>
               <Text>默认样式</Text>
             </View>
-            <View className='example-body'>
+            <View className='checkbox-example'>
               <Checkbox value='选中' checked>
                 选中
               </Checkbox>
@@ -72,34 +72,31 @@ export default class PageCheckbox extends React.Component {
               </Checkbox>
             </View>
           </View>
-          <View className='components-page__body-example example'>
+          <View className='example'>
             <View className='example-header'>
               <Text>推荐展示样式</Text>
             </View>
-            <View className='example-body'>
+            <View className='checkbox-example-vertical'>
               <View className='select-box'>
-                当前选择: {this.state.selectValues.join(',')}
+                <Text>当前选择: {this.state.selectValues.join(',')}</Text>
               </View>
-              <View>
-                <View className='checkbox-list'>
-                  <CheckboxGroup name='checkbox' onChange={this.checkboxChange}>
-                    {this.state.list.map(item => {
-                      return (
-                        <Label
-                          className='checkbox-list__label'
-                          key={item.value}>
-                          <Checkbox
-                            className='checkbox-list__checkbox'
-                            value={item.value}
-                            checked={item.checked}>
-                            {item.text}
-                          </Checkbox>
-                        </Label>
-                      )
-                    })}
-                  </CheckboxGroup>
-                </View>
-              </View>
+              <CheckboxGroup id='cg' className='checkbox-list' name='checkbox' onChange={this.checkboxChange}>
+                {this.state.list.map(item => {
+                  return (
+                    <Label
+                      className='checkbox-list__label'
+                      key={item.value}>
+                      <Checkbox
+                        className='checkbox-list__checkbox'
+                        groupId='cg'
+                        value={item.value}
+                        checked={item.checked}>
+                        {item.text}
+                      </Checkbox>
+                    </Label>
+                  )
+                })}
+              </CheckboxGroup>
             </View>
           </View>
         </View>
