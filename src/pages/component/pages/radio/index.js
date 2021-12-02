@@ -1,8 +1,8 @@
-import './radio.scss'
 import React from 'react'
 import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components'
-
 import Header from '../../../../components/head/head'
+
+import './index.scss'
 
 export default class PageRadio extends React.Component {
   state = {
