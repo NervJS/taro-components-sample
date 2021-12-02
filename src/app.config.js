@@ -23,9 +23,9 @@ export default {
     // 'pages/component/pages/textarea/textarea',
     // 'pages/component/pages/canvas/canvas',
     // 'pages/component/pages/map/map',
-    'pages/component/pages/navigator/navigator',
-    'pages/component/pages/redirectPage/redirectPage',
-    'pages/component/pages/navigatePage/navigatePage',
+    'pages/component/pages/navigator/index',
+    'pages/component/pages/redirectPage/index',
+    'pages/component/pages/navigatePage/index',
     // 'pages/about/about',
     // 'pages/component/pages/camera/camera'
   ],

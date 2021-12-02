@@ -1,4 +1,4 @@
-import './navigator.scss'
+import './index.scss'
 
 import Taro from '@tarojs/taro'
 import React from 'react'
@@ -23,7 +23,7 @@ export default class PageSwitch extends React.Component {
                 process.env.TARO_ENV != 'h5' ? 
                   <View className='example-body__navigators'>
                     <Navigator
-                      url='/pages/component/pages/navigatePage/navigatePage'
+                      url='/pages/component/pages/navigatePage/index'
                       className='example-body__navigators-item'
                       hoverClass='example-body__navigators-item'
                     >
@@ -32,7 +32,7 @@ export default class PageSwitch extends React.Component {
                       </View>
                     </Navigator>
                     <Navigator
-                      url='/pages/component/pages/redirectPage/redirectPage'
+                      url='/pages/component/pages/redirectPage/index'
                       className='example-body__navigators-item'
                       hoverClass='example-body__navigators-item'
                       open-type='redirect'
