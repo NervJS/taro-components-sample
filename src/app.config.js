@@ -5,7 +5,7 @@ export default {
     'pages/component/pages/scroll-view/index',
     'pages/component/pages/icon/index',
     'pages/component/pages/progress/index',
-    // 'pages/component/pages/image/image',
+    'pages/component/pages/image/index',
     // 'pages/component/pages/audio/audio',
     // 'pages/component/pages/video/video',
     'pages/component/pages/swiper/index',
