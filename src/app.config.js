@@ -13,7 +13,7 @@ export default {
     // 'pages/component/pages/input/input',
     'pages/component/pages/checkbox/index',
     'pages/component/pages/radio/index',
-    // 'pages/component/pages/button/button',
+    'pages/component/pages/button/index',
     'pages/component/pages/text/index',
     // 'pages/component/pages/label/label',
     // 'pages/component/pages/picker/picker',
