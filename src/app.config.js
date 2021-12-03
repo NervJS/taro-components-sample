@@ -20,7 +20,7 @@ export default {
     // 'pages/component/pages/picker-view/picker-view',
     'pages/component/pages/slider/index',
     'pages/component/pages/switch/index',
-    // 'pages/component/pages/textarea/textarea',
+    'pages/component/pages/textarea/index',
     // 'pages/component/pages/canvas/canvas',
     // 'pages/component/pages/map/map',
     'pages/component/pages/navigator/index',
