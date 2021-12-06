@@ -20,14 +20,6 @@ export default class PageLabel extends React.Component {
     checked: false
   }
 
-  handleChange = e => {
-    console.log('e====', e);
-    // const { checked } = this.state
-    // this.setState({
-    //   checked: !checked
-    // })
-  }
-
   render() {
     return (
       <View className='components-page'>
@@ -36,7 +28,7 @@ export default class PageLabel extends React.Component {
         </View>
         <View className='container-page'>
           <Text>表单组件在label内</Text>
-          {/* <CheckboxGroup> */}
+          <CheckboxGroup>
             <Label className='example-body__label' for='1' key='1'>
               <Checkbox value='美国' id='1'>美国</Checkbox>
             </Label>
@@ -45,6 +37,7 @@ export default class PageLabel extends React.Component {
                 中国
             </Checkbox>
             </Label>
+          </CheckboxGroup>
 
           {/* <View className='components-page__body-example example'>
             <View className='example-header'>
