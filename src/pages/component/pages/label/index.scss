@@ -1,0 +1,13 @@
+/*postcss-pxtransform rn eject enable*/
+.container-page {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+.example-body {
+  &__label {
+    display: flex;
+  }
+}
+
+/*postcss-pxtransform rn eject disable*/

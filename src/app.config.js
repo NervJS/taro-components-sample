@@ -15,7 +15,7 @@ export default {
     'pages/component/pages/radio/index',
     'pages/component/pages/button/index',
     'pages/component/pages/text/index',
-    // 'pages/component/pages/label/label',
+    'pages/component/pages/label/index',
     // 'pages/component/pages/picker/picker',
     // 'pages/component/pages/picker-view/picker-view',
     'pages/component/pages/slider/index',
