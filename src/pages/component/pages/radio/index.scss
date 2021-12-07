@@ -1,4 +1,16 @@
+.example-header-radio {
+  width: 100%;
+  font-size: 34px;
+  color: #999;
+  margin-bottom: 20px;
+  text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .example-radio {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;

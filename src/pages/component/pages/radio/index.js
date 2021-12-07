@@ -57,7 +57,7 @@ export default class PageRadio extends React.Component {
         </View>
         <View className='components-page_body'>
           <View className='example'>
-            <View className='example-header'>
+            <View className='example-header-radio'>
               <Text>默认样式</Text>
             </View>
             <View className='example-radio'>
@@ -73,7 +73,7 @@ export default class PageRadio extends React.Component {
             </View>
           </View>
           <View className='example'>
-            <View className='example-header'>
+            <View className='example-header-radio'>
               <Text>推荐展示样式</Text>
             </View>
             <View className='example-radio-group'>
