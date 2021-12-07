@@ -17,7 +17,7 @@ export default {
     'pages/component/pages/text/index',
     'pages/component/pages/label/index',
     'pages/component/pages/picker/index',
-    // 'pages/component/pages/picker-view/picker-view',
+    'pages/component/pages/picker-view/index',
     'pages/component/pages/slider/index',
     'pages/component/pages/switch/index',
     'pages/component/pages/textarea/index',
@@ -27,7 +27,7 @@ export default {
     'pages/component/pages/redirectPage/index',
     'pages/component/pages/navigatePage/index',
     // 'pages/about/about',
-    'pages/component/pages/camera/index' 
+    'pages/component/pages/camera/index'
   ],
   window: {
     backgroundTextStyle: 'light',
