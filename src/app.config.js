@@ -7,7 +7,7 @@ export default {
     'pages/component/pages/progress/index',
     'pages/component/pages/image/index',
     // 'pages/component/pages/audio/audio',
-    // 'pages/component/pages/video/video',
+    'pages/component/pages/video/index',
     'pages/component/pages/swiper/index',
     // 'pages/component/pages/form/form',
     // 'pages/component/pages/input/input',
@@ -27,7 +27,7 @@ export default {
     'pages/component/pages/redirectPage/index',
     'pages/component/pages/navigatePage/index',
     // 'pages/about/about',
-    // 'pages/component/pages/camera/camera'
+    'pages/component/pages/camera/index' 
   ],
   window: {
     backgroundTextStyle: 'light',
