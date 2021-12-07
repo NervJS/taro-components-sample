@@ -1,7 +1,7 @@
-import './about.scss'
-
 import React from 'react'
 import { View, Text } from '@tarojs/components'
+
+import './about.scss'
 export default class About extends React.Component {
   componentDidMount () {
     console.log('about mount')
