@@ -1,10 +1,9 @@
-import './picker.scss'
-
 import Taro from '@tarojs/taro'
 import React from 'react'
 import { View, Text, Picker } from '@tarojs/components'
-
 import Header from '../../../../components/head/head'
+
+import './index.scss'
 
 export default class PagePicker extends React.Component {
   state = {
@@ -45,62 +44,63 @@ export default class PagePicker extends React.Component {
     const val = e.detail.value
     const dateSel = Array.isArray(val) ? val.join('-') : val
     this.setState({ dateSel })
+    const isContentType = Object.keys(header).find(key => key.toLowerCase() === 'content-type')
+    if (!isContentType) {
+      header['content-type'] = '...'
+    }
   }
 
   render () {
     const { selector, multiSelector, selectorValue, mulitSelectorValues, timeSel, dateSel } = this.state
     return (
-      <View className='container'>
-        <Header title='Picker'></Header>
-        <View className='page-body'>
+      <View className='components-page'>
+        <View className='components-page__header'>
+          <Header title='Picker'></Header>
+        </View>
+        <View className='components-page_body'>
           <View className='page-section'>
             <View className='page-section-title'>
               <Text>普通选择器</Text>
             </View>
-            <View>
+            <View className="picker-row">
+              <Text className='picker-content'>
+                当前选择：{selector[selectorValue]}
+              </Text>
               <Picker
+                className='picker'
                 mode='selector'
                 range={selector}
                 value={selectorValue}
                 onChange={this.handleChange}>
-                <View className='picker'>
-                  当前选择：{selector[selectorValue]}
-                </View>
               </Picker>
             </View>
           </View>
-          {Taro.getEnv() !== Taro.ENV_TYPE.ALIPAY
-          ? <View className='page-section'>
+          <View className='page-section'>
               <View className='page-section-title'>
                 <Text>多行选择器</Text>
               </View>
-              <View>
+              <View className="picker-row">
+                <Text className='picker-content'>
+                  当前选择： {
+                    `${this.state.multiSelector[0][mulitSelectorValues[0]]}, ${this.state.multiSelector[1][mulitSelectorValues[1]]}`
+                  }
+                </Text>
                 <Picker
+                  className='picker'
                   mode='multiSelector'
                   range={multiSelector}
                   onChange={this.handleMulitChange}
                   onColumnchange={this.handleColumnchange}>
-                  <View className='picker'>
-                    当前选择： {
-                      `${this.state.multiSelector[0][mulitSelectorValues[0]]}, ${this.state.multiSelector[1][mulitSelectorValues[1]]}`
-                    }
-                  </View>
                 </Picker>
               </View>
-            </View>
-          : <View className='page-section'>
-              <View className='page-section-title'>
-                <Text>支付宝小程序暂不支持多列选择器</Text>
-              </View>
-            </View>
-          }
+          </View>
           <View className='page-section'>
             <View className='page-section-title'>
               <Text>时间选择器</Text>
             </View>
-            <View>
-              <Picker mode='time' onChange={this.handleTimeChange} value={timeSel}>
-                <View className='picker'>当前选择：{timeSel}</View>
+            <View className="picker-row">
+              <Text className='picker-content'>当前选择：{timeSel}</Text>
+              <Picker className='picker' mode='time' onChange={this.handleTimeChange} value={timeSel}>
               </Picker>
             </View>
           </View>
@@ -108,9 +108,9 @@ export default class PagePicker extends React.Component {
             <View className='page-section-title'>
               <Text>日期选择器</Text>
             </View>
-            <View>
-              <Picker mode='date' onChange={this.handleDateChange} value={dateSel}>
-                <View className='picker'>当前选择：{dateSel}</View>
+            <View className="picker-row">
+              <Text className='picker-content'>当前选择：{dateSel}</Text>
+              <Picker className='picker' mode='date' onChange={this.handleDateChange} value={dateSel}>
               </Picker>
             </View>
           </View>

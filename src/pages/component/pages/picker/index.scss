@@ -1,0 +1,17 @@
+.picker-row {
+  position: relative;
+  width: 100%;
+}
+
+.picker-content {
+  position: absolute;
+  left: 50%;
+  height: 30vp;
+  transform: translate(-50%);
+  background-color: #FFFFFF;
+  z-index: 100;
+}
+
+.picker {
+  flex: 1;
+}

@@ -96,6 +96,7 @@
 }
 
 .page-section {
+  flex-direction: column;
   width: 100%;
   text-align: center;
   margin-bottom: 60px;
@@ -126,11 +127,16 @@
 }
 
 .page-section-title {
+  width: 100%;
   font-size: 28px;
   color: #999999;
   margin-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  text {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .page-section-gap .page-section-title {

@@ -16,7 +16,7 @@ export default {
     'pages/component/pages/button/index',
     'pages/component/pages/text/index',
     'pages/component/pages/label/index',
-    // 'pages/component/pages/picker/picker',
+    'pages/component/pages/picker/index',
     // 'pages/component/pages/picker-view/picker-view',
     'pages/component/pages/slider/index',
     'pages/component/pages/switch/index',
