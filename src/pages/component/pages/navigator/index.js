@@ -18,26 +18,26 @@ export default class PageSwitch extends React.Component {
         </View>
         <View className='components-page_body'>
           <View className='components-page__body-example example'>
-            <View className='example-body'>
+            <View className='example-navigator'>
               {
                 process.env.TARO_ENV != 'h5' ? 
-                  <View className='example-body__navigators'>
+                  <View className='example-navigator__navigators'>
                     <Navigator
                       url='/pages/component/pages/navigatePage/index'
-                      className='example-body__navigators-item'
-                      hoverClass='example-body__navigators-item'
+                      className='example-navigator__navigators-item'
+                      hoverClass='example-navigator__navigators-item'
                     >
-                      <View className='example-body__navigator'>
+                      <View className='example-navigator__navigator'>
                         <Text>跳转到新页面</Text>
                       </View>
                     </Navigator>
                     <Navigator
                       url='/pages/component/pages/redirectPage/index'
-                      className='example-body__navigators-item'
-                      hoverClass='example-body__navigators-item'
+                      className='example-navigator__navigators-item'
+                      hoverClass='example-navigator__navigators-item'
                       open-type='redirect'
                     >
-                      <View className='example-body__navigator'>
+                      <View className='example-navigator__navigator'>
                         <Text>在当前页打开</Text>
                       </View>
                     </Navigator>

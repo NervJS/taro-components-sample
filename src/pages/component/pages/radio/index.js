@@ -45,7 +45,7 @@ export default class PageRadio extends React.Component {
 
   radioChange = e => {
     this.setState({
-      selectValue: e._detail.value
+      selectValue: e.detail.value
     })
   }
 
@@ -56,38 +56,38 @@ export default class PageRadio extends React.Component {
           <Header title='Radio'></Header>
         </View>
         <View className='components-page_body'>
-          <View className='components-page__body-example example'>
+          <View className='example'>
             <View className='example-header'>
               <Text>默认样式</Text>
             </View>
-            <View className='example-body'>
-              <Label className='example-body-label'>
-                <Radio className="example-body-label__radio" value='选中' checked id='0' groupId='group1' />
+            <View className='example-radio'>
+              <Label className='example-radio-label'>
+                <Radio className="example-radio-label__radio" value='选中' checked groupId='group1' />
                 <Text className='example-title'>选中</Text>
               </Label>
 
-              <Label className='example-body-label'>
-                <Radio style='margin-left: 20rpx' value='未选中' id='1' groupId='group1' />
+              <Label className='example-radio-label'>
+                <Radio style='margin-left: 20rpx' value='未选中' groupId='group1' />
                 <Text className='example-title'>未选中</Text>
               </Label>
             </View>
           </View>
-          <View className='components-page__body-example example'>
+          <View className='example'>
             <View className='example-header'>
               <Text>推荐展示样式</Text>
             </View>
-            <View className='example-body-group'>
-              <View className='example-body__select-box'>
+            <View className='example-radio-group'>
+              <View className='example-radio__select-box'>
                 <Text>选中的值是: {this.state.selectValue}</Text>
               </View>
-              <View className='example-body__radios-box'>
+              <View className='example-radio__radios-box'>
                 <RadioGroup id='radio-group' className='radio-vertical' onChange={this.radioChange}>
-                  <View className='example-body__radios'>
+                  <View className='example-radio__radios'>
                     {this.state.list.map((item, i) => {
                       return (
                         <View 
-                          className={ cn('example-body__radios-label', { 
-                            'example-body__radios-label__active': i === this.state.list.length - 1
+                          className={ cn('example-radio__radios-label', { 
+                            'example-radio__radios-label__active': i === this.state.list.length - 1
                           }) } 
                           for={i} key={i}
                         >
