@@ -1,0 +1,28 @@
+.example-body {
+  &__radio-group {
+    &-item {
+      margin-right: 40px;
+    }
+  }
+  &__checkbox-group {
+    &-item {
+      margin-right: 40px;
+    }
+  }
+}
+.components-page__body-example {
+  display: flex;
+  flex-direction: column;
+  .example-body {
+    margin-top: 10px;
+  }
+}
+
+.example-form_func {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .example-form_button {
+    width: 100%;
+  }
+}

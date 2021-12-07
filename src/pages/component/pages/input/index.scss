@@ -1,0 +1,14 @@
+.components-page_body {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  .example-header {
+    text {text-align: left;}
+  }
+  .components-page__body-example {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+  }
+}
+

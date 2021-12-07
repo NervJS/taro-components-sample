@@ -16,10 +16,10 @@ const sassImporter = function(url) {
 }
 
 const config = {
-  projectName: 'taro-components-sample',
+  projectName: 'TaroHarmony',
   designWidth: 750,
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: '/Users/caishuai6/DevEcoStudioProjects/TaroHarmony2/entry/src/main/js/default',
   framework: 'react',
   sass: {
     importer: sassImporter
