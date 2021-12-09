@@ -19,7 +19,7 @@ const config = {
   projectName: 'TaroHarmony',
   designWidth: 750,
   sourceRoot: 'src',
-  outputRoot: '/Users/caishuai6/DevEcoStudioProjects/TaroHarmony2/entry/src/main/js/default',
+  outputRoot: 'dist',
   framework: 'react',
   sass: {
     importer: sassImporter
