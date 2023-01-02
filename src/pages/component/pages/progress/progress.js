@@ -7,7 +7,7 @@ import Header from '../../../../components/head/head'
 export default class PageView extends React.Component {
   constructor() {
     super(...arguments)
-    this._timmer = null
+    this._timer = null
   }
 
   state = {
@@ -15,8 +15,8 @@ export default class PageView extends React.Component {
   }
 
   handleStart = () => {
-    if (this._timmer || this.state.progress > 100) return
-    this._timmer = setInterval(() => {
+    if (this._timer || this.state.progress > 100) return
+    this._timer = setInterval(() => {
       const value = this.state.progress + 2
       if (value > 100) {
         return this.handleStop()
@@ -28,9 +28,9 @@ export default class PageView extends React.Component {
   }
 
   handleStop = () => {
-    if (this._timmer) {
-      clearInterval(this._timmer)
-      this._timmer = null
+    if (this._timer) {
+      clearInterval(this._timer)
+      this._timer = null
     }
   }
 
