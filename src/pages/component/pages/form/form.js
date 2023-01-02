@@ -137,7 +137,7 @@ export default class PageForm extends React.Component {
                   value={this.state.sliderValue}
                   showValue
                   onChange={this.handleSliderChange}
-                  bingchanging={this.handleSliderChanging} ></Slider>
+                  onChanging={this.handleSliderChanging} ></Slider>
               </View>
             </View>
             <View className='components-page__body-example example example-input'>
